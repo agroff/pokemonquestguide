@@ -1,0 +1,166 @@
+// clearfix
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: " "; 
+		display: table;
+	}
+	
+	&:after{
+		clear: both;
+	}
+}
+
+@mixin circ-button($color:#fff){
+	display: table-cell;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 1;
+	font-size: 18px;
+	position: relative;
+	color: $color;
+	border-radius: 40px;
+	transition: 0.3s;
+	background: transparentize($color,0.9);
+	&:before{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		content: "";
+		border-radius: 40px;
+		border: 2px solid $color;
+		border-color: $color;
+		border-top-color: transparent;
+		transform: rotate(45deg);
+		transition: 0.3s;
+	}
+	&:hover{
+		opacity: 0.8;
+		color: $color;
+		&:before{
+			transform: rotate(-135deg);
+		}
+	}
+}
+
+@mixin magic-button($color, $hoverColor, $width:1px) {
+	//padding-top: 2px;
+	padding-right: 14px;
+	padding-left: 16px;
+	height: 40px;
+	font-size: 14px;
+	//font-family: $sans;
+	color: $color;
+	text-transform: uppercase;
+	position: relative;
+	transition: 0.1s;
+	&:before,
+	&:after{
+		content: "";
+		//background: $color;
+		background: currentColor;
+		width: $width;
+		position: absolute;
+		transition: 0.3s;
+	}
+	&:before{
+		top: 0;
+		left: 0;
+		height: 00%;
+	}
+	&:after{
+		bottom: 0;
+		right: 0;
+		height: 00%;
+	}
+	.txt{
+		&:before,
+		&:after{
+			content: "";
+			//background: $color;
+			background: currentColor;
+			height: $width;
+			position: absolute;
+			transition: 0.3s;
+		}
+		&:before{
+			top: 0;
+			right: 0;
+			width: 00%;
+		}
+		&:after{
+			bottom: 0;
+			left: 0;
+			width: 00%;
+		}
+	}
+	.arrow-icon{
+		content: "";
+		position: absolute;
+		top: (20px - $width/2);
+//		top: 20px;
+		right: -8px;
+		width: 0px;
+		height: $width;
+		//background: $color;
+		background: currentColor;
+		transition: 0.3s;
+		&:after,
+		&:before{
+			content: "";
+			position: absolute;
+//			top: (-4px + $width/2);
+			top: -4px + 0.5*$width;
+			right: 8px;
+			width: 8px;
+			height: 8px;
+//							border: 1px solid $black;
+//							border-left: none;
+//							border-top: none;
+			transform: rotate(-45deg);
+			transform-origin: center;
+			transition: 0.3s;
+		}
+		&:after{
+			//border-top: $width solid $color;
+			border-top: $width solid currentColor;
+			transform: rotate(45deg);
+		}
+		&:before{
+			//border-bottom: $width solid $color;
+			border-bottom: $width solid currentColor;
+			transform: rotate(-45deg);
+		}
+	}
+
+	&:hover{
+		//color: $color;
+		color: $hoverColor;
+		&:after,
+		&:before{
+			height: 100%;
+		}
+		.txt{
+			&:after,
+			&:before{
+				width: 100%;
+			}
+		}
+		.arrow-icon{
+			width: 16px;
+			&:after{
+				transform: rotate(45deg);
+				right: -8px;
+			}
+			&:before{
+				transform: rotate(-45deg);;
+				right: -8px;
+			}
+		}
+	}
+}

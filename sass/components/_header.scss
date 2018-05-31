@@ -1,0 +1,87 @@
+@import "../mixins";
+@import "../variables";
+
+// Logo
+.header-top{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 0;
+	z-index: 20;
+	.logo-wrapper{
+		position: relative;
+		z-index: 1;
+		float: left;
+		//margin-top: 32px;
+		padding: 16px 0px;
+		margin-left: 16px;
+		@media(min-width: 601px){
+			background: none;
+			padding: 32px 0px;
+			padding-bottom: 0px;
+			//margin-left: 16px;
+			margin-left: 32px;
+		}
+		.logo{
+			font-family: $sans;
+			font-weight: normal;
+			font-size: $text-size;
+			color: $white;
+			transition: 0.3s;
+			margin: 0;
+			@include clearfix;
+			
+			.logo-img{
+				display: block;
+				float: left;
+				.light-logo{
+					display: inline-block;
+				}
+				.dark-logo{
+					display: none;
+				}
+			}
+			.logo-text{
+				float: left;
+				margin-top: 4px;
+				margin-left: 8px;
+				@media(min-width: 601px){
+					display: block;
+					margin-top: 0;
+					margin-left: 16px;
+				}
+			}
+			.title{
+				display: block;
+				font-size: 20px;
+				line-height: 1.1em;
+				font-weight: bold;
+				@media(min-width: 601px){
+					font-size: 24px;
+				}
+			}
+			.desc{
+				font-size: 12px;
+				display: block;
+				font-weight: normal;
+				@media(min-width: 601px){
+					font-size: $text-size;
+				}
+			}
+			img{
+				height: 48px;
+				width: auto;
+				margin: 0px;
+			}
+		}
+	}
+	
+}
+
+body.left-light{
+	.header-top{
+		.logo-wrapper{
+		}
+	}
+}

@@ -1,0 +1,30 @@
+@import "../mixins";
+@import "../variables";
+
+.section{
+	.c-wrapper{
+		.item-detail{
+			h4{
+				font-family: $sans;
+				color: $black;
+				font-size: 30px;
+			}
+			.separator{
+				width: 120px;
+				height: 1px;
+				background: $light-gray;
+				display: block;
+				content: "";
+				margin-top: 16px;
+				margin-bottom: 8px;
+			}
+			.btn{
+				padding-top: 9px;
+				display: inline-block;
+				border-left: 1px solid $light-gray;
+				&:hover{
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+/*-----------------------------------------------------------------
+[Legal Notice]
+
+Copyright (c) HighHay/Mivfx
+Before using this template, you should agree with themeforest licenses terms.
+http://themeforest.net/licenses
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+/** CSS Reference
+    0. Base Style
+	1. 1. Header, and page menu 
+		1.1 Header (logo)/ .header-top
+		1.2 Menu / .menu-links, .menu-icon
+		1.3 Dot/bar Navigation at right / #fp-nav.right (hooking fullpage.js plugin)
+	2. Background cover image / .page-cover 
+	3. Main content / .main
+		3.1 Fullscreen sections overall style / .section 
+		3.2 Home page section (including the clock) / .section-home 
+		3.3 Projects/Products/Gallery / .section-projects
+		3.4 Contact page section and forms /  .section-contact
+	4. Footer / .site-footer
+	5. Responsiveness
+	
+	Hooks to altering this css file can be found in "style-colorX.css" file 
+
+**/
+/*---------- 
+[Colors]
+    text color : #FFFFFF, #FFF
+	orange : #FEA91F
+	black : #0d0d0d
+[Typography]
+	font-family : "Roboto Condensed"
+*/
+
+
+/* 0. Base Style  */
+@import "./init.scss";
+/* 0.1 Helper classes */
+@import "./helper.scss";
+/* 0.3 basic views*/
+@import "./_views";
+/* 0.4 Clock */
+@import "./components/_view_clock";
+
+/* 1. Header, and page menu */
+/* 1.1 Header (logo)/ .header-top */
+@import "./components/_header";
+
+/* 1.2 Menu / .menu-links, .menu-icon */
+@import "./components/_menu";
+
+/* 1.3 Dot/bar Navigation at right / #fp-nav.right (hooking fullpage.js plugin) */
+@import "./components/_navrightdot";
+
+
+/* 2 Background cover image / .page-cover */ 
+@import "./components/_cover";
+
+
+/* 3. main content / .main */
+.main{
+	height: 100%;
+}
+/* 3.1 Fullscreen sections overall style / .section */
+@import "./components/_page_main"; 
+
+/* 3.2 Home page section (including the clock) / .section-home */
+@import "./components/_page_home"; 
+
+/* 3.3 Projects/Products/Gallery / .section-projects */
+@import "./components/_page_itemlist"; 
+
+/* 3.4 Contact page section and forms / .section-contact */
+@import "./components/_page_contact";
+
+/* 3.5 Registration form / .section-register */
+@import "./components/_page_register"; 
+
+/* 4 Footer / .site-footer */
+@import "./components/_footer.scss"; 
+	    
+
+/* 5. Responsiveness */ 
+@import "./components/_responsive"; 
+
+

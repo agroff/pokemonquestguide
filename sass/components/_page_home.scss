@@ -1,0 +1,103 @@
+@import "../mixins";
+@import "../variables";
+
+/* 2.3.0 home section / .section-home */
+.section-home{
+	.content{
+		.desc{
+			width: 100%;
+			margin: auto;
+			@media(min-width: 601px){
+				max-width: 480px;
+				margin-left: 0;
+			}
+		}
+		.cta-btns{
+			margin-top: 16px;
+		}
+		.c-centered{
+			.title-desc{
+				h2,h3,p{
+					text-align: center;
+				}
+			}
+		}
+		.home-logo{
+			text-align: center;
+			@media(min-width: 601px){
+				text-align: left;
+			}
+			img{
+				display: inline-block;
+				height: 120px;
+				@media(min-width: 601px){
+					height: 240px;
+				}
+			}
+		}
+		
+	}
+	
+	
+	.anim{
+		.anim-wrapper{
+			overflow: hidden;
+			display: block;
+		}
+		h2{
+			transition: 0.6s;
+			transition-delay: 0s;
+			position: relative;
+			transform: translateY(120%);
+			transition-timing-function: cubic-bezier(.52, .42, 0, 1.01);
+		}
+		h3{
+			transition: 0.6s;
+			transition-delay: 0s;
+			position: relative;
+			transform: translateY(120%);
+			transition-timing-function: cubic-bezier(.52, .42, 0, 1.01);
+		}
+		p{
+			transition: 0.6s;
+			transition-delay: 0s;
+			position: relative;
+			transform: translateY(-120%);
+			transition-timing-function: cubic-bezier(.52, .42, 0, 1.01);
+		}
+		.home-logo,
+		.clock{
+			@media (min-width:601px) {
+				transition: 0.6s;
+				transition-delay: 0s;
+				transform: scale(1.1);
+				opacity: 0;
+				transition-timing-function: cubic-bezier(.52, .42, 0, 1.01);
+			}
+		}
+	}
+	
+	&.active{
+		.anim{
+			h2{
+				transform: none;
+				transition-delay: 0.6s;
+			}
+			h3{
+				transform: none;
+				transition-delay: 0.8s;
+			}
+			p{
+				transform: none;
+				transition-delay: 1.0s;
+			}
+			
+			.home-logo,
+			.clock{
+				opacity: 1;
+				transform: none;
+				transition-delay: 0.3s;
+			}
+		}
+	}
+}

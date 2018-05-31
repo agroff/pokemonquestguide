@@ -1,0 +1,169 @@
+/* Alternative colors */
+$color1 : #FFF;
+
+/* Background mask */
+.cover-bg-mask.bg-color{
+	background: rgba(25, 29, 59, 0.75) !important;
+}
+/* fonts */
+.menu-links .links li a,
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", "Helvetica", sans-serif;
+}
+.section .content .title-desc h2,
+.section .content .title-desc .title h2{
+	font-family: "Montserrat";
+}
+.section .content .title-desc .title h2 {
+    @media (min-width: 601px){
+		font-size: 64px;
+	}
+}
+/* menu */
+.menu-links{
+	background: $color1;
+	@media(min-width: 601px){
+		background: transparent;
+	}
+}
+.menu-links .links li.cta a{
+	border-color: $color1;
+}
+.menu-links .links li.cta a:hover{
+	border-color: $color1;
+	background: transparentize($color1, 0.9);
+}
+.menu-links .links li a:hover, 
+.menu-links .links li a.menu-visible, 
+.menu-links .links li a:active{
+	color: $color1;
+}
+
+/* clock */
+.clock:before{
+	border-top-color: $color1;
+}
+.clock:after{
+	border-color: $color1;
+}
+.clock .clock-wrapper .tile .days,
+.clock .clock-wrapper .tile .hours, 
+.clock .clock-wrapper .tile .minutes,
+.clock .clock-wrapper .tile .seconds{
+	border-bottom-color: $color1;
+}
+/* main page */
+.section .content .title-desc h2,
+.section .content .title-desc .title h2{
+	color: $color1;
+}
+.section .content .title-desc h3,
+.section .content .item-desc h3,
+.section .content .c-features-list li h3{
+	color: $color1;
+}
+.section-home .content .title-desc h3{
+	color: #fff;
+}
+.section-contact .content .item-desc a,
+.section-contact .content .c-form .form .fields label.error{
+	color: $color1;
+}
+.section .content .c-features-list li:before{
+	background: $color1;
+}
+.section .content .c-features-list li:after{
+	border-color: $color1;
+}
+
+/* footer */
+
+@media (min-width: 601px){
+	.site-footer{
+		background: transparentize(#fff, 0.9);
+	}
+}
+
+.site-footer .note .marked,
+.site-footer .note a{
+	color: $color1;
+	text-decoration: underline;
+}
+.scrolldown a:after{
+	background: $color1;
+}
+.site-footer .subscription .form .input{
+	border-color: $color1;
+}
+@media (min-width: 601px){
+	.site-footer .note:before,
+	.site-footer .contact .socials li:after{
+		background: #fff;
+	}
+	.site-footer .note ,
+	.site-footer .subscription .form label,
+	.site-footer .subscription .form .input,
+	.site-footer .subscription .title{
+		color: #fff;
+	}
+}
+
+/* Buttons */
+.circ-btn{
+	color: #fff;
+}
+@media (min-width: 601px){
+	.circ-btn{
+		color: #fff;
+	}
+}
+.magic-btn{
+	color: $color1;
+}
+.rect-btn:focus,
+.rect-btn:hover{
+	border-color: $color1;
+}
+.arrow-circ-btn .arrow-icon:after{
+	border-color: $color1;
+}
+.arrow-circ-btn .arrow-icon:before{
+	border-color: $color1;
+	border-left-color: transparent;
+}
+.arrow-circ-btn:hover .arrow-icon:after{
+	border-color: $color1;
+}
+.arrow-circ-btn:focus .arrow-icon:before, .arrow-circ-btn:hover .arrow-icon:before{
+	border-color: #fff;
+    border-left-color: transparent;
+}
+.circ-btn:before{
+	border-color: $color1;
+	border-top-color: transparent;
+}
+.circ-btn:hover:before{
+	border-color: #fff;
+	border-top-color: transparent;
+}
+.circ-btn:hover{
+	color: $color1;
+}
+/* Nav dots and Slider indication */
+#fp-nav ul li a.active span, 
+#fp-nav ul li a.active:hover span{
+	border-color: $color1;
+}
+.section .content .wrapper .swiper-pagination-bullet:hover, 
+.section .content .wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background: $color1;
+}
+.section .content .wrapper .swiper-pagination-bullet:hover:before,
+.section .content .wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active:before{
+	border-color: $color1;
+}
+.section .content .wrapper .items-nav-container .items-button a:after{
+	background: $color1;
+}
+/* Fonts */
+

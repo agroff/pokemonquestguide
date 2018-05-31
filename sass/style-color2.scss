@@ -1,0 +1,117 @@
+/* Alternative colors */
+$color1 : #E91E63;
+//$color1 : #fff;
+/* Alternative colors */
+$color2 : #ff9800;
+
+
+/* menu */
+.main-menu,
+.top-menu-links{
+	background: rgba(0,0,0,0.9);
+	@media (min-width: 601px){
+		background: none;
+	}
+}
+.top-menu-links .links li.cta a:hover{
+	color: $color1;
+}
+.main-menu ul li.active .icon,
+.main-menu ul li a:hover{
+	color: $color1;
+}
+ 
+ /* main page */
+$bgColor: $color1;
+.section .content .c-columns{
+	.c-logo{
+		&:after{
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: -32px;
+			background: $color1;
+			z-index: -1;
+			border: none;
+		}
+		.arrow-circ-btn{
+			&:before{
+				background: #fff;
+			}
+			&:focus, 
+			&:hover {
+				color:  $color1;
+			}
+		}
+	}
+	.wrapper{
+		.arrow-circ-btn:focus, 
+		.arrow-circ-btn:hover{
+			color:  $bgColor;
+		}
+	}
+	.item-desc a {
+		color: $bgColor;
+	}
+	.circ-btn:hover:before{
+		border-color: $bgColor;
+		border-top-color: transparent;
+	}
+
+	/* feature list */
+	.c-features-list li{
+		h3{
+			color: $bgColor;
+		}
+		&:before{
+			background: $bgColor;
+		}
+	} 
+	.swiper-pagination-bullet:hover, 
+	.swiper-pagination-bullet.swiper-pagination-bullet-active{
+		background: $bgColor;
+	}
+	.swiper-pagination-bullet:hover:before,
+	.swiper-pagination-bullet.swiper-pagination-bullet-active:before{
+		border-color: $bgColor;
+	}
+	.wrapper .items-nav-container .items-button a:after{
+		background: $bgColor;
+	}
+}
+
+/* footer */
+ 
+/* Buttons */
+.circ-btn{
+	color: #fff;
+}
+@media (min-width: 601px){
+	.circ-btn{
+		color: #fff;
+	}
+}
+.magic-btn{
+	color: $color1;
+}
+.rect-btn:focus,
+.rect-btn:hover{
+	border-color: $color1;
+}
+.arrow-circ-btn .arrow-icon:after{
+	border-color: $color1;
+}
+.arrow-circ-btn .arrow-icon:before{
+	border-color: $color1;
+	border-left-color: transparent;
+}
+.arrow-circ-btn:hover .arrow-icon:after{
+	border-color: $color1;
+}
+.arrow-circ-btn:focus .arrow-icon:before, .arrow-circ-btn:hover .arrow-icon:before{
+	border-color: #fff;
+    border-left-color: transparent;
+}
+
+/* Fonts */
+

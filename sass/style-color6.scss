@@ -1,0 +1,149 @@
+/* Alternative colors */
+$color1 : #6c11ff;
+//$color1 : #fff;
+/* Alternative colors */
+$color2 : #fd0057;
+
+/* Background mask */
+.cover-bg-mask.bg-color{
+	//background: rgba(0, 0, 0, 0.2) !important;
+}
+/* menu */
+.main-menu,
+.top-menu-links{
+	background: rgba(0,0,0,0.9);
+	@media (min-width: 601px){
+		background: none;
+	}
+}
+.top-menu-links .links li.cta a:hover{
+	color: $color1;
+}
+.main-menu ul li.active .icon,
+.main-menu ul li a:hover{
+	color: $color1;
+}
+
+
+ /* main page */
+/* asssign different background for each section */
+.section .content .c-columns{
+    background: rgba(0,0,0,0.25);
+}
+.section-home{
+	
+}
+.section-about{
+	background: url("../img/bg-default2.jpg");
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.section-services{
+	background: url("../img/bg-default1.jpg");
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.section-projects{
+	background: url("../img/pattern.png");
+	background-repeat: repeat;
+    background-position: center center;
+    background-size: auto;
+}
+.section-register{
+	background: url("../img/bg-default.jpg");
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.section-contact{
+	background: url("../img/bg-default4.jpg");
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* text color */
+$bgColor: $color1;
+.section .content .c-columns
+{
+	.c-logo{
+		.arrow-circ-btn{
+			color:  #fff;
+			border-color: #fff;
+			&:before{
+				background: #fff;
+			}
+			&:focus, 
+			&:hover {
+				color:  $bgColor;
+			}
+		}
+	}
+	.wrapper{
+		.arrow-circ-btn:focus, 
+		.arrow-circ-btn:hover{
+			color:  $bgColor;
+		}
+	}
+	.item-desc a {
+		color: $bgColor;
+	}
+	.circ-btn:hover:before{
+		border-color: $bgColor;
+		border-top-color: transparent;
+	}
+
+	/* feature list */
+	.c-features-list li{
+		h3{
+			color: $bgColor;
+		}
+		&:before{
+			background: $bgColor;
+		}
+	} 
+	.swiper-pagination-bullet:hover, 
+	.swiper-pagination-bullet.swiper-pagination-bullet-active{
+		background: $bgColor;
+	}
+	.swiper-pagination-bullet:hover:before,
+	.swiper-pagination-bullet.swiper-pagination-bullet-active:before{
+		border-color: $bgColor;
+	}
+	.wrapper .items-nav-container .items-button a:after{
+		background: $bgColor;
+	}
+
+}
+
+/* footer */
+ 
+/* Buttons */
+.circ-btn{
+	color: #fff;
+}
+@media (min-width: 601px){
+	.circ-btn{
+		color: #fff;
+	}
+}
+
+.arrow-circ-btn .arrow-icon:after{
+	border-color: $color1;
+}
+.arrow-circ-btn .arrow-icon:before{
+	border-color: $color1;
+	border-left-color: transparent;
+}
+.arrow-circ-btn:hover .arrow-icon:after{
+	border-color: $color1;
+}
+.arrow-circ-btn:focus .arrow-icon:before, .arrow-circ-btn:hover .arrow-icon:before{
+	border-color: #fff;
+    border-left-color: transparent;
+}
+
+/* Fonts */
+

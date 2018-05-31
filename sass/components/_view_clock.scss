@@ -1,0 +1,98 @@
+@import "../mixins";
+@import "../variables";
+
+.clock{
+	position: relative;
+	font-family: $sans-serif;
+	.clock-wrapper{
+		@include clearfix;
+		position: relative;
+		.title{
+			text-align: left;
+			margin-top: 16px;
+		}
+		h3{
+			font-size: 1em;
+			font-weight: normal;
+			font-family: $sans-serif;
+		}
+		.tile{
+			.txt{
+				font-size: 12px;
+				font-weight: normal;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+		
+		.tile-days{
+			margin-left: 0;
+			position: relative;
+			display: inline-block;
+			&:after{
+				right: -8px;
+				top: 0;
+				bottom: 0;
+				width: 1px;
+				position: absolute;
+				content: "";
+				background: $white;
+				transform: rotate(45deg);
+			}
+			.digit{
+				font-size: 32px;
+				line-height: 1em;
+				display: inline-block;
+				font-weight: bold;
+				font-family: $sans;
+				@media(min-width: 601px){
+					font-size: 80px;
+					line-height: 64px;
+					margin-bottom: 8px;
+					font-weight: lighter;
+					vertical-align: middle;
+				}
+				position: relative;
+			}
+		}
+		.tile-hours,
+		.tile-minutes,
+		.tile-seconds{
+			float: left;
+			margin-left: 0px;
+			margin-right: 8px;
+			.digit{
+				font-size: 32px;
+				line-height: 32px;
+				display: inline-block;
+				text-align: left;
+				position: relative;
+				font-weight: lighter;
+				font-family: $sans;
+			}
+		}
+		.tile-seconds{
+			margin-right: 0;
+			.seconds{
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.clock-container{
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 8px;
+	padding-top: 16px;
+	margin-top: 16px;
+	transition: 0.6s;
+	&.gone{
+		opacity: 0;
+		visibility: hidden;
+	}
+}

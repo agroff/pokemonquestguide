@@ -1,0 +1,253 @@
+/* Alternative colors : white background and dark text */
+/* 
+	color1 : #00BCD4;
+	color2 : #033339;
+*/
+$color1 : #ffb500;
+$color2 : #d45a00;
+$title : #221b5c;
+$textColor : #383838;
+
+/* Header */
+.header-top{
+	.logo-wrapper{
+		.logo{
+			color: $textColor;
+			.desc{
+				color: $color1;
+			}
+		}
+	}
+}
+/* menu */
+.top-menu-links{
+	background: #fff;
+	@media (min-width: 601px){
+		background: none;
+	}
+	.links li{
+		a{
+			color: $textColor;
+			&:hover{
+				color: $color1;
+			}
+		}
+		&.cta{
+			a{
+				border-color: currentColor;
+				&:hover{
+					border-color: currentColor;
+				}
+			}
+		}
+	}
+}
+.top-menu-links .links li.cta a:hover{
+	color: $color1;
+}
+.main-menu ul li a{
+	color: $textColor;
+}
+.main-menu ul li.active .icon,
+.main-menu ul li a:hover{
+	color: $color1;
+}
+.menu-icon{
+	background: transparentize($textColor, 0.7);
+	border-color: $textColor;
+}
+
+
+/* clock */
+.clock:before{
+	border-top-color: $color1;
+}
+.clock:after{
+	border-color: $color1;
+}
+.clock .clock-wrapper .tile .days,
+.clock .clock-wrapper .tile .hours, 
+.clock .clock-wrapper .tile .minutes,
+.clock .clock-wrapper .tile .seconds{
+	border-bottom-color: $color1;
+}
+.clock .clock-wrapper .tile .hours:after, 
+.clock .clock-wrapper .tile .minutes:after, 
+.clock .clock-wrapper .tile .seconds:after,
+.clock .clock-wrapper .tile .days:after{
+	background: $textColor;
+}
+/* main page */
+.section .content .c-columns .c-logo{
+	&:after{
+//		top: 0;
+//		bottom: 0;
+//		left: 0;
+//		right: -32px;
+//		z-index: -1;
+//		background: #fff;
+//		box-shadow: 0 0 5px rgba(0,0,0,0.15);
+		background: transparentize($textColor, 0.2);
+	}
+	.top{
+		border-top-color: $color1;
+	}
+}
+body{
+	color: $textColor;
+}
+.section .content .c-right:before {
+	@media (min-width: 801px) {
+	 	background: transparentize($textColor, 0.9);
+	}
+}
+.section .content .title-desc h2{
+	color: $color1;
+}
+.section .content .title-desc .title h2{
+	color: $textColor;
+}
+.section .content .title-desc h3,
+.section .content .item-desc h3,
+.section .content .c-features-list li h3{
+	color: $textColor;
+}
+.section-home .content .title-desc h3{
+	color: $color1;
+}
+.section-contact .content .item-desc a,
+.section-contact .content .c-form .form .fields label.error{
+	color: $color1;
+}
+.section .content .c-features-list li:before{
+	background: $color1;
+}
+.section .content .c-features-list li:after{
+	border-color: $color1;
+}
+.section .content .c-features-list li h4{
+	color: $color1;
+}
+.section .content .c-features-list li .desc p{
+	color: $textColor;
+}
+.section-contact .content .c-form .form .fields label{
+	color: $color1;
+}
+.section-contact .content .c-form .form .fields input{
+	color: $textColor;
+	border-bottom-color: $textColor;
+	background: transparentize($textColor, 0.9);
+}
+.section-contact .content .c-form .form .fields textarea{
+	background: transparentize($textColor, 0.9);
+}
+.section .anim .item-desc h3:before{
+	background: $textColor;
+}
+/* footer */
+.site-footer .note .marked,
+.site-footer .note a{
+	color: $color1;
+	text-decoration: underline;
+}
+.scrolldown a:after{
+	background: $color1;
+}
+.subscription .form .input{
+	border-color: $color1;
+	color: $textColor;
+}
+.scrolldown a{
+	color: $color1;
+}
+.subscription ,
+.subscription .form label,
+.subscription .form .input,
+.subscription .title{
+	color: $textColor;
+}
+/* Buttons */
+.magic-btn{
+	color: $color1;
+}
+.rect-btn,
+.arrow-circ-btn{
+	color: $textColor;
+	border-color: currentColor;
+}
+.rect-btn .arrow-icon,
+.arrow-circ-btn .arrow-icon{
+	color: inherit;
+}
+.arrow-circ-btn .arrow-icon:after{
+	border-color: currentColor;
+}
+.arrow-circ-btn .arrow-icon:before{
+	border-color: currentColor;
+	border-left-color: transparent;
+}
+.rect-btn:focus,
+.rect-btn:hover,
+.arrow-circ-btn:focus,
+.arrow-circ-btn:hover{
+	color: $color1;
+	border-color: currentColor;
+}
+.arrow-circ-btn:hover .arrow-icon{
+	color: inherit;
+}
+.arrow-circ-btn:hover .arrow-icon:after{
+	border-color: currentColor;
+}
+.arrow-circ-btn:hover .arrow-icon:before{
+	border-color: currentColor;
+}
+.circ-btn{
+	color: $textColor;
+}
+.circ-btn:before{
+	border-color: $color1;
+	border-top-color: transparent;
+}
+.circ-btn:hover:before{
+	border-color: $textColor;
+	border-top-color: transparent;
+}
+.circ-btn:hover{
+	color: $color1;
+}
+/* Nav dots and Slider indication */
+#fp-nav ul li a.active:hover span, 
+#fp-nav ul li a span{
+	border-color: $textColor;
+}
+#fp-nav ul li a.active span, 
+#fp-nav ul li a.active:hover span{
+	border-color: $color1;
+}
+#fp-nav ul li a:hover span{
+	border-color: transparentize($color1,0.9);
+}
+.section .content .wrapper .swiper-pagination-bullet:hover, 
+.section .content .wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background: $color1;
+}
+.section .content .wrapper .swiper-pagination-bullet:hover:before,
+.section .content .wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active:before{
+	border-color: $color1;
+}
+.section .content .wrapper .items-nav-container .items-button a:after{
+	background: $color1;
+}
+.section .content .wrapper .items-nav-container .items-button a,
+.section .content .wrapper .items-nav-container .items-button a:hover{
+	color: $textColor;
+}
+.section .content .wrapper .items-nav-container .items-button:after,
+.section .content .wrapper .swiper-pagination-bullet{
+	background: $textColor;
+}
+
+/* Fonts */
+

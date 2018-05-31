@@ -1,0 +1,168 @@
+@import "../mixins";
+@import "../variables";
+
+// Subscription Form
+.subscription{
+	display: block;
+	color: $white;
+	margin-bottom: 2em;
+	position: relative;
+	.title{
+		padding-top: 8px;
+		text-align: left;
+		font-size: 14px;
+		font-family: $sans-serif;
+		color: $white;
+		display: inline-block;
+		vertical-align: middle;
+		@media(min-width: 601px){
+			font-size: $text-small;
+		}
+	}
+
+	p{
+		display: block;
+		float: none;
+		text-align: right;
+		padding-top: 8px;
+		margin-bottom: 0px;
+		font-size: $text-small;
+		max-width: 240px;
+		transition: 0.3s;
+		&.gone{
+			margin-bottom: 0;
+			display: none;
+		}
+	}
+	.form{
+		display: inline-block;
+		vertical-align: middle;
+		@include clearfix;
+		label{
+			color: $white;
+			position: absolute;
+			bottom: 28px;
+			left: auto;
+			font-size: 12px;
+		}
+		.input{
+			float: left;
+			margin-right: 8px;
+			margin-bottom: 0;
+			width: 200px;
+			background: transparent;
+			//font-family: $sans;
+			font-size: $text-small;
+			color: $white;
+			border: none;
+			border-bottom: 2px solid currentColor;
+			box-shadow: none;
+			border-radius: 0;
+		}
+		.btn{
+			float: left;
+			cursor: pointer;
+			//color: $white;
+			&:focus{
+				box-shadow: none;
+				outline: none;
+			}
+		}
+	}
+
+	// Mailchimp embed form
+	#mc-embedded-subscribe-form{
+		@include clearfix;
+		label{
+			bottom: 32px;
+			color: $white;
+			left: 0;
+			@media (min-width:601px){
+				position: absolute;
+			}
+		}
+		.indicates-required{
+			display: none;	
+		}
+		input[type=text],
+		input[type=email]{
+			float: left;
+			margin-right: 8px;
+			margin-bottom: 0;
+			width: 240px;
+			background: transparent;
+			//font-family: $sans;
+			font-size: $text-small;
+			color: $white;
+			border: none;
+			border-bottom: 2px solid $white;
+			box-shadow: none;
+			border-radius: 0;
+			@media (min-width:601px){
+				padding-right: 80px;
+			}
+		}
+		input[type=submit],
+		.button,
+		.btn{
+			float: left;
+			cursor: pointer;
+			position: absolute;
+			background: transparentize($white,0.9);
+			right: 0;
+			bottom: 0px;
+			border: 2px solid $white;
+			border-radius: 2px;
+			//font-family: $sans;
+			font-size: $text-small;
+			margin-bottom: 0;
+			padding: 10px 8px;
+			&:focus{
+				box-shadow: none;
+				outline: none;
+			}
+		}
+	}
+}
+	
+// fpNav scroll down
+.scrolldown{
+	position: absolute;
+    bottom: 100%;
+    margin-bottom: 32px;
+    right: 13px;
+	font-family: $sans;
+    transform: rotate(-90deg);
+	a{
+		color: $white;
+		&:after{
+			position: absolute;
+			right: -16px;
+			height: 64px;
+			width: 2px;
+			content: "";
+			background: #fff;
+			transform: rotate(90deg);
+			transform-origin: bottom;
+			bottom: 12px;
+			transition: 0.3s;
+		}
+		&:hover{
+			&:after{
+				height: 32px;
+			}
+		}
+	}
+	
+}
+
+// Class added when section has class js-left-light
+body.left-light{
+	.note{
+		p{
+			@media(max-width: 801px){
+				// color: $medium-gray;
+			}
+		}
+	}
+}

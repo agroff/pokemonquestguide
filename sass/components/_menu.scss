@@ -1,0 +1,304 @@
+@import "../mixins";
+@import "../variables";
+
+// menu links at top
+.top-menu-links{
+	position: fixed;
+	top: percentage(2/3);
+	transform: translateX(40px);
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: $color1;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+	z-index: 2;
+	&.menu-visible{
+		visibility: visible;
+		opacity: 1;
+		transform: none;
+	}
+	@media(min-width: 601px){
+		top: 0;
+		left: auto;
+		right: 0;
+		bottom: auto;
+		visibility: visible;
+		opacity: 1;
+		transform: none;
+		background: none;
+	}
+	.links{
+		position: relative;
+		padding: 16px;
+		padding-top: 32px;
+		@media(min-width: 801px){
+			padding: 0;
+			float: right;
+			padding-top: 32px;
+			padding-right: 32px;
+			background: transparent;
+		}
+		li{
+			text-align: center;
+			margin-bottom: 16px;
+			width: 100%;
+			position: relative;
+			@media(min-width: 601px){
+				width: auto;
+				float: left;
+			}
+			#menu-link{
+				display: none;
+				@media(min-width: 601px){
+					display: inline-block;
+				}
+			}
+			&:before{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 1px;
+				background: $white;
+				display: none;
+				@media(min-width: 601px){
+					display: block;
+				}
+			}
+			&:first-child{
+				&:before{
+					display: none;
+				}
+			}
+			a{
+				font-family: $sans;
+				font-size: $text-size;
+				padding: 8px 12px;
+				display: inline-block;
+				color: $white;
+				transition: 0.3s;
+				width: 100%;
+				@media(min-width: 601px){
+					font-size: $text-size;
+					width: auto;
+				}
+				&:hover,
+				&.menu-visible,
+				&:active{
+					color: transparentize($white,0.4);
+					@media(min-width: 601px){
+						color: transparentize($white,0.4);
+					}
+				}
+			}
+			&.cta{
+				margin-top: -2px;
+				&:before{
+					display: none;
+				}
+				a{
+					border-radius: 4px;
+					padding-left: 24px;
+					padding-right: 24px;
+					background: transparentize($white,0.9);
+					border: 1px solid $white;
+					@media(min-width: 601px){
+						margin-left: 12px;
+					}
+					&:hover{
+						color: $color1;
+						background: $white;
+						border-color: transparentize($white,0.2);
+					}
+				}
+			}
+		}
+	}
+}
+
+.main-menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: percentage(1/3);
+	transform: translateX(-40px);
+	$menu-height: 48px;
+	opacity: 0;
+	visibility: hidden;
+	background: $color1;
+	transition: 0.3s;
+	padding-top: 32px;
+	&.menu-visible{
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+	}
+	@media (min-width: 601px){
+		top: auto;
+		left: auto;
+		right: 32px;
+		bottom: 24px;
+		visibility: visible;
+		opacity: 1;
+		transform: none;
+		display: flex;
+		align-items: center;
+		padding: 0;
+		background: none;
+	}
+	ul{
+		@include clearfix;
+		
+		li{
+			position: relative;
+			@media (min-width: 601px){
+				width: auto;
+				text-align: right;
+			}
+			a{
+				text-align: center;
+				display: block;
+				height: $menu-height;
+				color: $white;
+				font-size: $text-size;
+				font-family: $sans;
+				position: relative;
+				z-index: 1;
+				&:hover{
+					color: $color1;
+				}
+				@media (min-width: 601px){
+					text-align: right;
+					width: $menu-height;
+				}
+				@media (min-width:1400px){
+					font-size: 16px;
+					padding-top: 10px ;
+				}
+				.icon{
+					font-size: 32px;
+					vertical-align: middle;
+					transition: 0.3s;
+					display: inline-block;
+//					line-height: 1;
+//					width: 1.25em;
+//					height: 1.25em;
+//					text-align: center;
+//					background: transparentize($white,0.8);
+//					border-right: 0px solid $white;
+				}
+				.txt{
+					transition: 0.3s;
+					margin-right: 8px;
+					@media (min-width: 601px){
+						text-align: right;
+						position: absolute;
+						left: auto;
+						right: 32px;
+						margin-top: 8px;
+						margin-right: 0;
+						width: auto;
+						text-align: right;
+						visibility: hidden;
+						opacity: 0;
+						//display: none;
+						padding: 0 8px;
+						display: inline-block;
+					}
+				}
+			}
+			&:hover{
+				.txt{
+					@media (min-width: 601px){
+						///display: inline-block;
+						margin-top: 14px;
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+			&.active{
+				.icon{
+					color: $color1;
+				}
+			}	
+		}
+	}
+}
+
+// Menu icon visible only on small devices
+.menu-icon{
+	float: right;
+	position: fixed;
+	z-index: 11;
+	height: 48px;
+	width: 48px;
+	top: 16px;
+	right: 16px;
+	background: transparentize($white,0.9);
+	@media(min-width: 601px){
+		top: 32px;
+		// Hide it on medium/large devices
+		display: none;
+	}
+	border-radius: 40px;
+	border: 2px solid $white;
+	transition: 0.3s;
+	&:after{
+		display: none;
+	}
+	&:before{
+		position: absolute;
+		z-index: 1;
+		content: "";
+		transform: rotate(0deg);
+		background: transparentize($white,0.9);
+		top: 4px;
+		left: 4px;
+		bottom: 4px;
+		right: 4px;
+		border-radius: 40px;
+	}
+	.bars{
+		display: block;
+		margin: auto;
+		margin-top: 17px;
+		width: 16px;
+		.bar1,
+		.bar2,
+		.bar3{
+			display: block;
+			content: "";
+			height: 1px;
+			width: 100%;
+			background: $white;
+			margin-bottom: 4px;
+			-webkit-transition: 0.3s;
+			transition: 0.3s;
+		}
+		.bar2{
+		}
+		.bar3{
+		}
+	}
+	&.menu-visible{
+		.bars{
+			.bar1{
+				transform: translateY(5px) rotate(45deg);
+				transform-origin: center;
+			}
+			.bar3{
+				transform: translateY(-5px) rotate(-45deg);
+				transform-origin: center;
+			}
+			.bar2{
+				width: 0px;
+			}
+			
+		}
+	}
+}
