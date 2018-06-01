@@ -1,0 +1,62 @@
+$accentColor: #ffb500;
+
+
+h1,h2,h3,h4,h5,h6{
+  color:#5f5f5f;
+}
+
+h1{
+  font-size: 2.4rem;
+}
+h2{
+  font-size: 1.8rem;
+  color : $accentColor;
+}
+
+.main-menu,
+#fp-nav{
+  display:none;
+}
+
+body .section,
+.section{
+  .content{
+    .c-columns{
+      align-items: flex-start;
+
+      .wrapper{
+        margin-top:100px;
+      }
+    }
+  }
+}
+
+.top{
+  padding-top:40px;
+  border: none;
+
+  @media (max-width: 800px) {
+    display:none;
+  }
+
+  h4{
+    margin-top:20px;
+  }
+
+  a{
+    color:$accentColor;
+    border-left: 2px solid #ffb5002b;
+    padding-left: 6px;
+    font-size: 16px;
+    transition: 0.3s all;
+    margin-top: 5px;
+    display: block;
+
+
+    &:hover{
+      border-left:2px solid $accentColor;
+      //color:darken($accentColor, 5);
+      letter-spacing: 0.2px;
+    }
+  }
+}

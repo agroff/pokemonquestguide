@@ -7,13 +7,13 @@
     <?php require "metas.php" ?>
 
 
-    <link rel="shortcut icon" href="/img/favicon.png" />
-    <link rel="apple-touch-icon" href="/img/favicon.png" />
+    <link rel="shortcut icon" href="/img/favicon.png"/>
+    <link rel="apple-touch-icon" href="/img/favicon.png"/>
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
     <!-- Web fonts and Web Icons -->
     <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
-<!--    <link rel="stylesheet" href="./fonts/montserrat/stylesheet.css">-->
+    <!--    <link rel="stylesheet" href="./fonts/montserrat/stylesheet.css">-->
     <link rel="stylesheet" href="./fonts/roboto/stylesheet.css">
     <link rel="stylesheet" href="./fonts/ionicons.min.css">
 
@@ -31,19 +31,23 @@
     <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
 
     <!--    ADSENSE-->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
     <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-2194128563708434",
-            enable_page_level_ads: true
-        });
+        // (adsbygoogle = window.adsbygoogle || []).push({
+        //     google_ad_client: "ca-pub-2194128563708434",
+        //     enable_page_level_ads: true
+        // });
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10831320-9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-10831320-9');
@@ -52,7 +56,8 @@
 
 <body id="menu" class="hh-body alt-bg left-light">
 <!--[if lt IE 8]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
 <![endif]-->
 
 
@@ -84,10 +89,12 @@
     <div class="section section-home fp-auto-height-responsive" data-section="home">
         <div class="content">
             <!-- Begin of Content -->
-            <div class="c-pos-1-4 c-columns anim">
+            <div class="c-pos-1-4 c-columns">
                 <div class="c-logo ">
                     <span class="ion-ios-home-outline icon visible-for-large-up"></span>
                     <div class="top">
+
+                        <?php require "side-menu.php"; ?>
 
 
                     </div>

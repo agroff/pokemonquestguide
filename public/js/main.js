@@ -61,37 +61,6 @@ $(document).on('ready', function () {
 	});
 
 
-	// 6. Products/Projects/items slider
-	var swiper = new Swiper('.items-slide', {
-		pagination: '.items-pagination',
-		paginationClickable: '.items-pagination',
-		nextButton: '.items-button-next',
-		prevButton: '.items-button-prev',
-		grabCursor: true,
-		slidesPerView: 1,
-		centeredSlides: false,
-		spaceBetween: 96,
-		breakpoints: {
-			800: {
-				slidesPerView: 1,
-				spaceBetween: 32
-			},
-			640: {
-				slidesPerView: 1,
-				spaceBetween: 32
-			},
-			440: {
-				slidesPerView: 1,
-				spaceBetween: 32
-			}
-		}
-	});
-
-	// 7. Prepare titles, content for animation
-	$('.section .content .anim .title h2, .section .content .anim .title h3, .section .content .anim .desc p, \
-		.section .content .anim .title-desc h2, .section .content .anim .title-desc h3, .section .content .anim .title-desc h4, .section .content .anim .item-desc h3,.section .content .anim .title-desc p, \
-		.cta-btns .btn').wrap("<span class='anim-wrapper'></span>");
-
 	// 8. Init fullPage.js plugin
 	var pageSectionDivs = $('.fullpg .section');
 	var headerLogo = $('.header-top .logo');
@@ -143,47 +112,41 @@ $(document).on('ready', function () {
 					submit: true,
 				},
 				afterRender: function () {
-					// Fired when page is rendered
-					// Append scroll down text to fpnav
-					var fpNav = $('#fp-nav');
-					fpNav.remove();
-					bodySelector.append('<div id="fp-nav-wrapper"></div>');
-					var fpNavWrapper = $('#fp-nav-wrapper');
-					fpNavWrapper.append(fpNav);
-					fpNavWrapper.append($('.site-footer .scrolldown'));
+					// // Fired when page is rendered
+					// // Append scroll down text to fpnav
+					// var fpNav = $('#fp-nav');
+					// fpNav.remove();
+					// bodySelector.append('<div id="fp-nav-wrapper"></div>');
+					// var fpNavWrapper = $('#fp-nav-wrapper');
+					// fpNavWrapper.append(fpNav);
+					// fpNavWrapper.append($('.site-footer .scrolldown'));
 
 
 				},
 				afterResize: function () {
-					var pluginContainer = $(this);
-					$.fn.fullpage.reBuild();
+					// var pluginContainer = $(this);
+					// $.fn.fullpage.reBuild();
 				},
 				onLeave: function (index, nextIndex, direction) {
-					// Behavior when a full page is leaved
-					arrowElem.addClass('gone');
-					pageElem.addClass('transition');
-					slideElem.removeClass('transition');
-					pageElem.removeClass('transition');
-
-					nextSectionDOM = sectionSelector[(nextIndex - 1)];
-					nextSection = $(nextSectionDOM);
-					if (nextSection.hasClass('dark-bg')) {
-						bodySelector.addClass('dark-section');
-						headerLogo.addClass('dark-bg');
-					}
-					else {
-						bodySelector.removeClass('dark-section');
-						headerLogo.removeClass('dark-bg');
-					}
+					// // Behavior when a full page is leaved
+					// arrowElem.addClass('gone');
+					// pageElem.addClass('transition');
+					// slideElem.removeClass('transition');
+					// pageElem.removeClass('transition');
+                    //
+					// nextSectionDOM = sectionSelector[(nextIndex - 1)];
+					// nextSection = $(nextSectionDOM);
+					// if (nextSection.hasClass('dark-bg')) {
+					// 	bodySelector.addClass('dark-section');
+					// 	headerLogo.addClass('dark-bg');
+					// }
+					// else {
+					// 	bodySelector.removeClass('dark-section');
+					// 	headerLogo.removeClass('dark-bg');
+					// }
 				},
 				afterLoad: function (anchorLink, index) {
-					// Behavior after a full page is loaded
-					// hide or show clock
-					if ($('.section.active').hasClass('hide-clock')) {
-						headerContainer.addClass('gone');
-					} else {
-						headerContainer.removeClass('gone');
-					}
+
 				}
 			});
 
@@ -196,8 +159,3 @@ $(document).on('ready', function () {
 });
 
 
-// Page Loader : hide loader when all are loaded
-$(window).on('load', function () {
-	$('#page-loader').addClass('p-hidden');
-	$('.section').addClass('anim');
-});

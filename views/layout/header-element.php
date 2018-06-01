@@ -27,9 +27,11 @@
 <!-- Begin of top menu -->
 <nav class="top-menu-links">
     <ul class="links">
-        <li class="cta">
-            <a href="https://themeforest.net/user/mivfx/portfolio" target="_blank">Search Guide...</a>
-        </li>
+<!--        <li class="cta">-->
+<!--            <a href="#" target="_blank">-->
+<!--                Search Guide...-->
+<!--            </a>-->
+<!--        </li>-->
     </ul>
 </nav>
 <!-- End of top menu -->
