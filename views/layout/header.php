@@ -72,7 +72,7 @@
 <!-- BEGIN OF page cover -->
 <div class="hh-cover page-cover">
     <!-- Cover Background -->
-    <div class="cover-bg pos-abs full-size bg-img  bg-blur-0" data-image-src="img/bg-default3.jpg"></div>
+    <div class="cover-bg pos-abs full-size bg-img  bg-blur-0" data-image-src="/img/bg-default3.jpg"></div>
 
 
     <!-- Transluscent mask as filter -->

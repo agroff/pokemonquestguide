@@ -1,9 +1,9 @@
 <!-- Begin of logo -->
 <div class="logo-wrapper">
-    <a href="./">
+    <a href="/">
         <h2 class="logo">
 	                <span class="logo-img">
-							<img class="light-logo" src="img/logo_dark.png" alt="Logo">
+							<img class="light-logo" src="/img/logo_dark.png" alt="Logo">
 	                </span>
             <span class="logo-text show-for-medium-up">
 	                    <span class="title">Pokemon</span>
