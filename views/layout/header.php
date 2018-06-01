@@ -12,23 +12,23 @@
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
     <!-- Web fonts and Web Icons -->
-    <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
-    <!--    <link rel="stylesheet" href="./fonts/montserrat/stylesheet.css">-->
-    <link rel="stylesheet" href="./fonts/roboto/stylesheet.css">
-    <link rel="stylesheet" href="./fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/fonts/opensans/stylesheet.css">
+    <!--    <link rel="stylesheet" href="/fonts/montserrat/stylesheet.css">-->
+    <link rel="stylesheet" href="/fonts/roboto/stylesheet.css">
+    <link rel="stylesheet" href="/fonts/ionicons.min.css">
 
 
     <!-- Uncomment below to load individualy vendor CSS -->
-    <link rel="stylesheet" href="./css/foundation.min.css">
-    <link rel="stylesheet" href="./js/vendor/swiper.min.css">
-    <link rel="stylesheet" href="./js/vendor/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="/css/foundation.min.css">
+    <link rel="stylesheet" href="/js/vendor/swiper.min.css">
+    <link rel="stylesheet" href="/js/vendor/jquery.fullpage.min.css">
 
     <!-- Main CSS files -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <!-- alt layout -->
-    <link rel="stylesheet" href="./css/style-color3.css">
+    <link rel="stylesheet" href="/css/style-color3.css">
 
-    <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
+    <script src="/js/vendor/modernizr-2.7.1.min.js"></script>
 
     <!--    ADSENSE-->
 <!--    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->

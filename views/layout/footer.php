@@ -20,14 +20,14 @@
 <!-- scripts -->
 <!-- All Javascript plugins goes here -->
 <!--		<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>-->
-<script src="./js/vendor/jquery-1.12.4.min.js"></script>
+<script src="/js/vendor/jquery-1.12.4.min.js"></script>
 <!-- All vendor scripts -->
-<script src="./js/vendor/scrolloverflow.min.js"></script>
-<script src="./js/vendor/all.js"></script>
+<script src="/js/vendor/scrolloverflow.min.js"></script>
+<script src="/js/vendor/all.js"></script>
 
 
 <!-- Javascript main files -->
-<script src="./js/main.js"></script>
+<script src="/js/main.js"></script>
 
 
 
