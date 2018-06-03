@@ -242,11 +242,11 @@
             },
             {
                 "type"   : "G",
-                "recipe" : "TTBBI"
+                "recipe" : "BBITT"
             },
             {
                 "type"   : "B",
-                "recipe" : "TTBBB"
+                "recipe" : "BBBTT"
             }
         ],
         "ingredients"  : {
@@ -281,7 +281,7 @@
             },
             {
                 "type"   : "G",
-                "recipe" : "BFFHH"
+                "recipe" : "BHHFF"
             },
             {
                 "type"   : "B",
@@ -429,15 +429,15 @@
             },
             {
                 "type"   : "VG",
-                "recipe" : "HHHIB"
+                "recipe" : "IBHHH"
             },
             {
                 "type"   : "G",
-                "recipe" : "HHBBA"
+                "recipe" : "BBAHH"
             },
             {
                 "type"   : "VG",
-                "recipe" : "HHHBB"
+                "recipe" : "BBHHH"
             }
         ],
         "ingredients"  : {
@@ -468,7 +468,7 @@
             },
             {
                 "type"   : "G",
-                "recipe" : "BBHAF"
+                "recipe" : "BBAFH"
             },
             {
                 "type"   : "B",
@@ -511,11 +511,11 @@
             },
             {
                 "type"   : "G",
-                "recipe" : "AAFII"
+                "recipe" : "FAAII"
             },
             {
                 "type"   : "B",
-                "recipe" : "BAAFF"
+                "recipe" : "FFAAB"
             }
         ],
         "ingredients"  : {
@@ -620,7 +620,7 @@
         "knownRecipes" : [
             {
                 "type"   : "SP",
-                "recipe" : "IHHHM"
+                "recipe" : "IMHHH"
             },
             {
                 "type"   : "VG",
@@ -663,11 +663,11 @@
             },
             {
                 "type"   : "VG",
-                "recipe" : "TBHHM"
+                "recipe" : "TBMHH"
             },
             {
                 "type"   : "G",
-                "recipe" : "TBBHM"
+                "recipe" : "TBBMH"
             },
             {
                 "type"   : "G",
