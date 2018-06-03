@@ -199,11 +199,13 @@ body .section,
     margin-top:5px;
 
     .attract-header {
+        font-size: 14px;
         cursor: pointer;
         position: relative;
         text-align: center;
         border-radius: 4px;
-        padding:6px;
+        padding: 3px;
+        line-height: 14px;
 
         .recipe-name {
             font-size: 75%;
@@ -242,12 +244,12 @@ body .section,
     }
 
     .expand-button{
-        font-size: 33px;
-        line-height: 27px;
+        font-size: 28px;
+        line-height: 22px;
         display: block;
         position: absolute;
         left:8px;
-        top:1px;
+        top:-1px;
         width: 26px;
         height: 26px;
         background-color: #ffffff4f;
@@ -265,9 +267,12 @@ body .section,
 
 .ingredient-types {
     background-color: #f5f5f5;
-    padding:4px;
+    padding:8px;
     border-radius:4px;
     margin-bottom:4px;
+
+    display:grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .ingredient-container {
@@ -283,16 +288,16 @@ body .section,
         height: 30px;
         color: white;
         width: 30px;
-        padding: 4px 10px;
+        padding: 6px 10px;
         font-weight: bold;
         margin: 10px 4px;
 
         &.quality-SP {
-            padding: 4px 8px;
+            padding: 6px 8px;
             background-color: #ffa500;
         }
         &.quality-VG {
-            padding: 4px 6px;
+            padding: 6px 7px;
             background-color: #c000ff;
         }
         &.quality-G {
@@ -305,7 +310,7 @@ body .section,
 
     &.spaced{
         .ingredient {
-            margin: 6px 8px;
+            margin: 6px auto;
         }
     }
 

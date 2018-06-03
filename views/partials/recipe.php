@@ -1,6 +1,7 @@
 <div class="recipe-container">
     <h5 class="<?php o($attracts); ?> attract-header">
-        <?php o(ucwords($attracts)); ?> Pokemon -
+        <?php o(ucwords($attracts)); ?> Pokemon
+        <br>
         <span class="recipe-name">
             <?php o($name); ?>
         </span>

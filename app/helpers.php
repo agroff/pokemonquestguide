@@ -125,10 +125,15 @@ function renderIngredientAmount($ingredientType, $amount, $allIngredients)
     $englishAmount = str_replace("-", " ", $amount);
     $englishAmount = ucwords($englishAmount);
     $englishCount = amountToCount($amount);
+    $englishType = ucwords ($ingredientType);
+
+    $explanation = $englishAmount . " ($englishCount) of ";
+    $typeExplanation = "<br><b>$englishType</b> Ingredients: ";
 
     echo "<div class='ingredient-types'>";
-    echo $englishAmount . " ($englishCount) of <b>" . ucwords ($ingredientType) . "</b>";
-    echo " Ingredients:";
+    echo "<div class='ingredient-explanation'>";
+    echo $explanation . $typeExplanation;
+    echo "</div>";
     echo "<div class='ingredient-container tiny'>";
     foreach($allIngredients as $ingredient){
         if($ingredient["attributes"][$ingredientType]){
