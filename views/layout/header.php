@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="/js/vendor/jquery.fullpage.min.css">
 
     <!-- Main CSS files -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css<?php o('?t='.time()); ?>">
     <!-- alt layout -->
     <link rel="stylesheet" href="/css/style-color3.css">
 

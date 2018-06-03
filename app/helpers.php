@@ -80,7 +80,7 @@ function renderRecipe($recipe, $ingredients)
 
     //echo "<span>$recipeString</span>";
 
-    echo "<div class='ingredient-container'>";
+    echo "<div class='ingredient-container tiny spaced'>";
 
     echo "<div title='$qualityName' class='quality quality-$quality'>";
     echo $quality;

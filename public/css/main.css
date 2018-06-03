@@ -2689,11 +2689,17 @@ h2 {
 #fp-nav {
   display: none; }
 
+header.header-top {
+  z-index: 400; }
+
 .main-menu {
   background: #b1837f;
   padding: 70px 30px;
   color: black;
-  text-align: center; }
+  text-align: center;
+  position: fixed;
+  z-index: 310;
+  height: 100%; }
   @media (min-width: 600px) {
     .main-menu {
       display: none; } }
@@ -2814,9 +2820,11 @@ body .section .content p,
 .recipe-container {
   margin-top: 5px; }
   .recipe-container .attract-header {
+    cursor: pointer;
     position: relative;
     text-align: center;
-    border-radius: 4px; }
+    border-radius: 4px;
+    padding: 6px; }
     .recipe-container .attract-header .recipe-name {
       font-size: 75%; }
   .recipe-container p {
@@ -2842,9 +2850,9 @@ body .section .content p,
     display: block;
     position: absolute;
     left: 8px;
-    top: 3px;
-    width: 30px;
-    height: 30px;
+    top: 1px;
+    width: 26px;
+    height: 26px;
     background-color: #ffffff4f;
     color: white;
     border-radius: 50%;
@@ -2884,6 +2892,8 @@ body .section .content p,
       background-color: #00adff; }
     .ingredient-container .quality.quality-B {
       background-color: #00bd29; }
+  .ingredient-container.spaced .ingredient {
+    margin: 6px 8px; }
   .ingredient-container.tiny .ingredient {
     width: 40px;
     height: 36px;

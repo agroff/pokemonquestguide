@@ -26,11 +26,17 @@ h2 {
 #fp-nav {
     display: none;
 }
+header.header-top{
+    z-index: 400;
+}
 .main-menu{
     background: #b1837f;
     padding: 70px 30px;
     color:black;
     text-align: center;
+    position:fixed;
+    z-index:310;
+    height:100%;
 
     @media (min-width: 600px) {
         display:none;
@@ -193,9 +199,11 @@ body .section,
     margin-top:5px;
 
     .attract-header {
+        cursor: pointer;
         position: relative;
         text-align: center;
         border-radius: 4px;
+        padding:6px;
 
         .recipe-name {
             font-size: 75%;
@@ -239,9 +247,9 @@ body .section,
         display: block;
         position: absolute;
         left:8px;
-        top:3px;
-        width: 30px;
-        height: 30px;
+        top:1px;
+        width: 26px;
+        height: 26px;
         background-color: #ffffff4f;
         color: white;
         border-radius: 50%;
@@ -292,6 +300,12 @@ body .section,
         }
         &.quality-B {
             background-color: #00bd29;
+        }
+    }
+
+    &.spaced{
+        .ingredient {
+            margin: 6px 8px;
         }
     }
 

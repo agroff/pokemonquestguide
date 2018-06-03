@@ -233,8 +233,8 @@
         "attracts"     : "water",
         "knownRecipes" : [
             {
-                "type"   : "SP",
-                "recipe" : ""
+                "type"   : "VG",
+                "recipe" : "BBIHH"
             },
             {
                 "type"   : "G",
@@ -277,11 +277,11 @@
             },
             {
                 "type"   : "VG",
-                "recipe" : ""
+                "recipe" : "BHHMM"
             },
             {
                 "type"   : "G",
-                "recipe" : ""
+                "recipe" : "BFFHH"
             },
             {
                 "type"   : "B",
@@ -311,10 +311,6 @@
         "attracts"     : "poison",
         "knownRecipes" : [
             {
-                "type"   : "SP",
-                "recipe" : "TMMMM"
-            },
-            {
                 "type"   : "VG",
                 "recipe" : "TTMMM"
             },
@@ -323,8 +319,8 @@
                 "recipe" : "TTTMM"
             },
             {
-                "type"   : "B",
-                "recipe" : " "
+                "type"   : "G",
+                "recipe" : "TTTAM"
             }
         ],
         "ingredients"  : {
@@ -350,16 +346,16 @@
         "attracts"     : "ground",
         "knownRecipes" : [
             {
-                "type"   : "VG",
-                "recipe" : "TTIIM"
+                "type"   : "SP",
+                "recipe" : "IIHHH"
             },
             {
                 "type"   : "VG",
-                "recipe" : "TFRRI"
+                "recipe" : "TTIIH"
             },
             {
                 "type"   : "G",
-                "recipe" : "TBFFR"
+                "recipe" : "TTFFR"
             },
             {
                 "type"   : "B",
@@ -440,7 +436,7 @@
                 "recipe" : "HHBBA"
             },
             {
-                "type"   : "U",
+                "type"   : "VG",
                 "recipe" : "HHHBB"
             }
         ],
@@ -467,15 +463,15 @@
         "attracts"     : "psychic",
         "knownRecipes" : [
             {
-                "type"   : "SP",
-                "recipe" : ""
+                "type"   : "VG",
+                "recipe" : "BAIHH"
             },
             {
-                "type"   : "U",
+                "type"   : "G",
                 "recipe" : "BBHAF"
             },
             {
-                "type"   : "U",
+                "type"   : "B",
                 "recipe" : "BBBAA"
             },
             {
@@ -550,15 +546,15 @@
             },
             {
                 "type"   : "VG",
-                "recipe" : ""
+                "recipe" : "FFRRI"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "FRRII"
             },
             {
                 "type"   : "G",
                 "recipe" : "FFFRR"
-            },
-            {
-                "type"   : "U",
-                "recipe" : "FFRRI"
             }
         ],
         "ingredients"  : {
@@ -584,20 +580,20 @@
         "attracts"     : "fire",
         "knownRecipes" : [
             {
+                "type"   : "SP",
+                "recipe" : "RRMMM"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "TIHMM"
+            },
+            {
                 "type"   : "G",
-                "recipe" : "TTTHH"
+                "recipe" : "TTTIH"
             },
             {
                 "type"   : "B",
                 "recipe" : "TTTAA"
-            },
-            {
-                "type"   : "G",
-                "recipe" : "TTBBM"
-            },
-            {
-                "type"   : "B",
-                "recipe" : "TTTBB"
             }
         ],
         "ingredients"  : {
@@ -624,19 +620,19 @@
         "knownRecipes" : [
             {
                 "type"   : "SP",
-                "recipe" : ""
+                "recipe" : "IHHHM"
             },
             {
                 "type"   : "VG",
-                "recipe" : "HHRMA"
+                "recipe" : "TTHHH"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "FRHHH"
             },
             {
                 "type"   : "G",
-                "recipe" : "TTHHA"
-            },
-            {
-                "type"   : "B",
-                "recipe" : " "
+                "recipe" : "TBAHH"
             }
         ],
         "ingredients"  : {
@@ -667,15 +663,15 @@
             },
             {
                 "type"   : "VG",
-                "recipe" : ""
+                "recipe" : "TBHHM"
             },
             {
                 "type"   : "G",
-                "recipe" : "BBHTM"
+                "recipe" : "TBBHM"
             },
             {
-                "type"   : "U",
-                "recipe" : "BBHTT"
+                "type"   : "G",
+                "recipe" : "TTBBH"
             }
         ],
         "ingredients"  : {

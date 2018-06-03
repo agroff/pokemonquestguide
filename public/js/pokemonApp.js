@@ -1,7 +1,9 @@
 $(function(){
-    $(".expand-button").click(function(){
-        var $button = $(this),
+
+    $("body").on("click", ".attract-header", function(){
+        var $button = $(".expand-button", $(this)),
             $parent = $button.closest(".recipe-container");
+
         if($parent.hasClass("expanded")){
             $parent.removeClass("expanded");
             $button.html("+");
@@ -11,4 +13,5 @@ $(function(){
             $button.html("-");
         }
     });
+
 });
