@@ -20,7 +20,7 @@ $data["meta"] = [
     "description" => "Learn everything about how to play the new Nintendo Switch Pokemon game. Tips for free to play strategy, cooking recipes, and more!"
 ];
 
-$allContent = json_decode(file_get_contents('../content/content.json'), true);
+$allContent = getData("content");
 
 foreach($allContent as $content){
 
@@ -28,6 +28,8 @@ foreach($allContent as $content){
         $path = "content/" . $content["category"] . "/" . $content["name"];
 
         $data["meta"] = array_merge($data["meta"], $content);
+
+        $data = appendContentData($data, $content);
 
         fullView($path, $data);
 

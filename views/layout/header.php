@@ -30,34 +30,39 @@
 
     <script src="/js/vendor/modernizr-2.7.1.min.js"></script>
 
-    <!--    ADSENSE-->
-<!--    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+    <!-- ADSENSE-->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
-        // (adsbygoogle = window.adsbygoogle || []).push({
-        //     google_ad_client: "ca-pub-2194128563708434",
-        //     enable_page_level_ads: true
-        // });
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-2194128563708434",
+            enable_page_level_ads: true
+        });
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10831320-9"></script>
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-10831320-9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
             dataLayer.push(arguments);
         }
-
         gtag('js', new Date());
-
         gtag('config', 'UA-10831320-9');
     </script>
 </head>
 
 <body id="menu" class="hh-body alt-bg left-light">
 <!--[if lt IE 8]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
+<p class="browsehappy">You are using an
+    <strong>outdated</strong>
+    browser. Please
+    <a href="http://browsehappy.com/">upgrade
+        your browser
+    </a>
+    to improve your experience.
+</p>
 <![endif]-->
 
 
@@ -72,11 +77,13 @@
 <!-- BEGIN OF page cover -->
 <div class="hh-cover page-cover">
     <!-- Cover Background -->
-    <div class="cover-bg pos-abs full-size bg-img  bg-blur-0" data-image-src="/img/bg-default3.jpg"></div>
+    <div class="cover-bg pos-abs full-size bg-img  bg-blur-0"
+         data-image-src="/img/bg-default3.jpg"></div>
 
 
     <!-- Transluscent mask as filter -->
-    <div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(255, 255, 255, 0.8)"></div>
+    <div class="cover-bg-mask pos-abs full-size bg-color"
+         data-bgcolor="rgba(255, 255, 255, 0.8)"></div>
 
 </div>
 <!--END OF page cover -->
@@ -93,13 +100,7 @@
                 <div class="c-logo ">
                     <span class="ion-ios-home-outline icon visible-for-large-up"></span>
                     <div class="top">
-
                         <?php require "side-menu.php"; ?>
-
-
                     </div>
 
                 </div>
-
-
-

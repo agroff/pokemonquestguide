@@ -1,34 +1,38 @@
 [
-  {
-    "name" : "recipe-cheatsheet",
-    "slug" : "cooking-recipe-cheatsheet",
-    "category" : "tools",
-    "title" : "Pokemon Quest Cooking Recipes",
-    "template" : "",
-    "description" : "Use our mobile friendly cheat sheet as a quick reference when cooking in pokemon quest"
-  },
-  {
-    "name" : "about",
-    "slug" : "what-is-pokemon-quest",
-    "category" : "articles",
-    "title" : "What is Pokemon Quest?",
-    "template" : "",
-    "description" : ""
-  },
-  {
-    "name" : "index",
-    "slug" : "",
-    "category" : "pages",
-    "title" : "Welcome to Pokemon Quest Guide",
-    "template" : "",
-    "description" : "Learn everything about how to play the new Nintendo Switch Pokemon game. Tips for free to play strategy, cooking recipes, and more!"
-  },
-  {
-    "name" : "",
-    "slug" : "ex",
-    "category" : "",
-    "title" : "",
-    "template" : "",
-    "description" : ""
-  }
+    {
+        "name"        : "recipe-cheatsheet",
+        "slug"        : "cooking-recipe-cheatsheet",
+        "category"    : "tools",
+        "data"        : [
+            "recipes",
+            "ingredients"
+        ],
+        "title"       : "Pokemon Quest Cooking Recipes",
+        "template"    : "",
+        "description" : "Use our mobile friendly cheat sheet as a quick reference when cooking in pokemon quest"
+    },
+    {
+        "name"        : "about",
+        "slug"        : "what-is-pokemon-quest",
+        "category"    : "articles",
+        "title"       : "What is Pokemon Quest?",
+        "template"    : "",
+        "description" : ""
+    },
+    {
+        "name"        : "index",
+        "slug"        : "",
+        "category"    : "pages",
+        "title"       : "Welcome to Pokemon Quest Guide",
+        "template"    : "",
+        "description" : "Learn everything about how to play the new Nintendo Switch Pokemon game. Tips for free to play strategy, cooking recipes, and more!"
+    },
+    {
+        "name"        : "",
+        "slug"        : "ex",
+        "category"    : "",
+        "title"       : "",
+        "template"    : "",
+        "description" : ""
+    }
 ]

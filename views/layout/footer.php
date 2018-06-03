@@ -28,6 +28,7 @@
 
 <!-- Javascript main files -->
 <script src="/js/main.js"></script>
+<script src="/js/pokemonApp.js"></script>
 
 
 

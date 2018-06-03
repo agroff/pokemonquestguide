@@ -1,10 +1,728 @@
 [
-  {
-    "name": "",
-    "description": "",
-    "ingredients": {
-
+    {
+        "name"         : "Mulligan Stew",
+        "description"  : "Favorite food of some Pokemon on Tumblecube Island",
+        "attractType"  : "all",
+        "attracts"     : "all",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : "MMIII"
+            },
+            {
+                "type"   : "SP",
+                "recipe" : "MMMIR"
+            },
+            {
+                "type"   : "SP",
+                "recipe" : "RRRII"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "TTBAR"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "TTFRI"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "TTBRI"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "TBAAA"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "TTFFF"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "TBBFF"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
     },
-    "name": ""
-  }
+    {
+        "name"         : "Red Stew",
+        "description"  : "Favorite food of reddish Pokemon",
+        "attractType"  : "color",
+        "attracts"     : "red",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : "RRRRR"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "TRRRR"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "TTRRR"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "TTTRM"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "TTTRR"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "TTTTU"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "whole-lot",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Blue Soda",
+        "description"  : "Favorite food of bluish Pokemon",
+        "attractType"  : "color",
+        "attracts"     : "blue",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : "IIIII"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "IIIBB"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "BBBBI"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "BBBBM"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "BBBBU"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "whole-lot",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Yellow Curry",
+        "description"  : "Favorite food of yellowish Pokemon",
+        "attractType"  : "color",
+        "attracts"     : "yellow",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : "HHHHH"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "HHHAA"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "AAAAI"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "AAAAU"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "whole-lot",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Gray Porridge",
+        "description"  : "Favorite food of grayish Pokemon",
+        "attractType"  : "color",
+        "attracts"     : "gray",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : "MMMMM"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "MMMFF"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "FFFFI"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "FFFFU"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "whole-lot",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Mouth-Watering Dip",
+        "description"  : "Favorite food of Water-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "water",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : ""
+            },
+            {
+                "type"   : "G",
+                "recipe" : "BBBRR"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "TTBBI"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "TTBBB"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "whole-lot",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "alot",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Plain Crepe",
+        "description"  : "Favorite food of Normal-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "normal",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : "HHHMM"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : ""
+            },
+            {
+                "type"   : "G",
+                "recipe" : ""
+            },
+            {
+                "type"   : "B",
+                "recipe" : "BBBFF"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "alot",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "few",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Sludge Soup",
+        "description"  : "Favorite food of Poison-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "poison",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : "TMMMM"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "TTMMM"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "TTTMM"
+            },
+            {
+                "type"   : "B",
+                "recipe" : " "
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "alot",
+            "hard"      : "",
+            "mushrooms" : "whole-lot",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Mud Pie",
+        "description"  : "Favorite food of Ground-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "ground",
+        "knownRecipes" : [
+            {
+                "type"   : "VG",
+                "recipe" : "TTIIM"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "TFRRI"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "TBFFR"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "TBBFF"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "alot",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "few",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Veggie Smoothie",
+        "description"  : "Favorite food of Grass-Type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "grass",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : ""
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "ARRRM"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "AAFRR"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "AAARM"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "few",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "whole-lot",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Honey Nectar",
+        "description"  : "Favorite food of Bug-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "bug",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : ""
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "HHHIB"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "HHBBA"
+            },
+            {
+                "type"   : "U",
+                "recipe" : "HHHBB"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "whole-lot",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "lot",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Brain Food",
+        "description"  : "Favorite food of Psychic-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "psychic",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : ""
+            },
+            {
+                "type"   : "U",
+                "recipe" : "BBHAF"
+            },
+            {
+                "type"   : "U",
+                "recipe" : "BBBAA"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "BBBAF"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "alot",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "few",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Stone Soup",
+        "description"  : "Favorite food of Rock-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "rock",
+        "knownRecipes" : [
+            {
+                "type"   : "VG",
+                "recipe" : "FFRII"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "FFIII"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "AAFII"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "BAAFF"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "whole-lot",
+            "mushrooms" : "",
+            "minerals"  : "few",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Light as Air",
+        "description"  : "Favorite food of Flying-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "flying",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : "RRIII"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : ""
+            },
+            {
+                "type"   : "G",
+                "recipe" : "FFFRR"
+            },
+            {
+                "type"   : "U",
+                "recipe" : "FFRRI"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "alot",
+            "plants"    : "few",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Hot Pot",
+        "description"  : "Favorite food of Fire-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "fire",
+        "knownRecipes" : [
+            {
+                "type"   : "G",
+                "recipe" : "TTTHH"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "TTTAA"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "TTBBM"
+            },
+            {
+                "type"   : "B",
+                "recipe" : "TTTBB"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "alot",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "little",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Watt a Risotta",
+        "description"  : "Favorite food of Electric-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "electric",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : ""
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "HHRMA"
+            },
+            {
+                "type"   : "G",
+                "recipe" : "TTHHA"
+            },
+            {
+                "type"   : "B",
+                "recipe" : " "
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "whole-lot",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "lot",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Get Swole Syrup",
+        "description"  : "Favorite food of Fighting-type Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "fighting",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : ""
+            },
+            {
+                "type"   : "VG",
+                "recipe" : ""
+            },
+            {
+                "type"   : "G",
+                "recipe" : "BBHTM"
+            },
+            {
+                "type"   : "U",
+                "recipe" : "BBHTT"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "alot",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "few",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : ""
+        }
+    },
+    {
+        "name"         : "Ambrosia of Legends",
+        "description"  : "Favorite food of Legendary Pokemon",
+        "attractType"  : "type",
+        "attracts"     : "legendary",
+        "knownRecipes" : [
+            {
+                "type"   : "SP",
+                "recipe" : "SSSSS"
+            },
+            {
+                "type"   : "VG",
+                "recipe" : "SSSUU"
+            }
+        ],
+        "ingredients"  : {
+            "sweet"     : "",
+            "small"     : "",
+            "big"       : "",
+            "soft"      : "",
+            "hard"      : "",
+            "mushrooms" : "",
+            "minerals"  : "",
+            "plants"    : "",
+            "blue"      : "",
+            "gray"      : "",
+            "red"       : "",
+            "yellow"    : "",
+            "mystical"  : "whole-lot"
+        }
+    }
 ]

@@ -1,0 +1,192 @@
+[
+    {
+        "name"         : "Tiny Mushrooms",
+        "abbreviation" : "T",
+        "attributes"   : {
+            "sweet"     : false,
+            "small"     : true,
+            "big"       : false,
+            "soft"      : true,
+            "hard"      : false,
+            "mushrooms" : false,
+            "minerals"  : false,
+            "plants"    : false,
+            "blue"      : false,
+            "gray"      : false,
+            "red"       : true,
+            "yellow"    : false,
+            "mystical"  : false
+        }
+    },
+    {
+        "name"         : "Big Roots",
+        "abbreviation" : "R",
+        "attributes"   : {
+            "sweet"     : false,
+            "small"     : false,
+            "big"       : true,
+            "soft"      : true,
+            "hard"      : false,
+            "mushrooms" : false,
+            "minerals"  : false,
+            "plants"    : true,
+            "blue"      : false,
+            "gray"      : false,
+            "red"       : true,
+            "yellow"    : false,
+            "mystical"  : false
+        }
+    },
+    {
+        "name"         : "Bluk Berries",
+        "abbreviation" : "B",
+        "attributes"   : {
+            "sweet"     : true,
+            "small"     : true,
+            "big"       : false,
+            "soft"      : true,
+            "hard"      : false,
+            "mushrooms" : false,
+            "minerals"  : false,
+            "plants"    : false,
+            "blue"      : true,
+            "gray"      : false,
+            "red"       : false,
+            "yellow"    : false,
+            "mystical"  : false
+        }
+    },
+    {
+        "name"         : "Icy Rocks",
+        "abbreviation" : "I",
+        "attributes"   : {
+            "sweet"     : false,
+            "small"     : false,
+            "big"       : false,
+            "soft"      : false,
+            "hard"      : true,
+            "mushrooms" : false,
+            "minerals"  : true,
+            "plants"    : false,
+            "blue"      : true,
+            "gray"      : false,
+            "red"       : false,
+            "yellow"    : false,
+            "mystical"  : false
+        }
+    },
+    {
+        "name"         : "Apricorns",
+        "abbreviation" : "A",
+        "attributes"   : {
+            "sweet"     : false,
+            "small"     : true,
+            "big"       : false,
+            "soft"      : false,
+            "hard"      : true,
+            "mushrooms" : false,
+            "minerals"  : false,
+            "plants"    : true,
+            "blue"      : false,
+            "gray"      : false,
+            "red"       : false,
+            "yellow"    : true,
+            "mystical"  : false
+        }
+    },
+    {
+        "name"         : "Honey",
+        "abbreviation" : "H",
+        "attributes"   : {
+            "sweet"     : true,
+            "small"     : false,
+            "big"       : false,
+            "soft"      : true,
+            "hard"      : false,
+            "mushrooms" : false,
+            "minerals"  : false,
+            "plants"    : false,
+            "blue"      : false,
+            "gray"      : false,
+            "red"       : false,
+            "yellow"    : true,
+            "mystical"  : false
+        }
+    },
+    {
+        "name"         : "Fossils",
+        "abbreviation" : "F",
+        "attributes"   : {
+            "sweet"     : false,
+            "small"     : true,
+            "big"       : false,
+            "soft"      : false,
+            "hard"      : true,
+            "mushrooms" : false,
+            "minerals"  : true,
+            "plants"    : false,
+            "blue"      : false,
+            "gray"      : true,
+            "red"       : false,
+            "yellow"    : false,
+            "mystical"  : false
+        }
+    },
+    {
+        "name"         : "Balm Mushrooms",
+        "abbreviation" : "M",
+        "attributes"   : {
+            "sweet"     : false,
+            "small"     : false,
+            "big"       : false,
+            "soft"      : true,
+            "hard"      : false,
+            "mushrooms" : true,
+            "minerals"  : false,
+            "plants"    : true,
+            "blue"      : false,
+            "gray"      : true,
+            "red"       : false,
+            "yellow"    : false,
+            "mystical"  : false
+        }
+    },
+    {
+        "name"         : "Mystic Shells",
+        "abbreviation" : "S",
+        "attributes"   : {
+            "sweet"     : false,
+            "small"     : false,
+            "big"       : false,
+            "soft"      : false,
+            "hard"      : false,
+            "mushrooms" : false,
+            "minerals"  : false,
+            "plants"    : false,
+            "blue"      : false,
+            "gray"      : false,
+            "red"       : false,
+            "yellow"    : false,
+            "mystical"  : true
+        }
+    },
+    {
+        "name" : "Any Ingredient",
+        "abbreviation" : "U",
+        "attributes"   : {
+            "sweet"     : false,
+            "small"     : false,
+            "big"       : false,
+            "soft"      : false,
+            "hard"      : false,
+            "mushrooms" : false,
+            "minerals"  : false,
+            "plants"    : false,
+            "blue"      : false,
+            "gray"      : false,
+            "red"       : false,
+            "yellow"    : false,
+            "mystical"  : false
+        }
+    }
+]

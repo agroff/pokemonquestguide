@@ -2680,9 +2680,35 @@ h2 {
   font-size: 1.8rem;
   color: #ffb500; }
 
-.main-menu,
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1.3rem; }
+  h2 {
+    font-size: 1.1rem; } }
+
 #fp-nav {
   display: none; }
+
+.main-menu {
+  background: #b1837f;
+  padding: 70px 30px;
+  color: black;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .main-menu {
+      display: none; } }
+  .main-menu h4, .main-menu h5 {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 0px; }
+  .main-menu a {
+    color: #ffb500;
+    display: block;
+    font-size: 1rem;
+    padding: 4px; }
+
+.hh-header .menu-icon {
+  background: #000; }
 
 body .section .content .c-columns,
 .section .content .c-columns {
@@ -2690,6 +2716,17 @@ body .section .content .c-columns,
   body .section .content .c-columns .wrapper,
   .section .content .c-columns .wrapper {
     margin-top: 100px; }
+    @media (max-width: 800px) {
+      body .section .content .c-columns .wrapper,
+      .section .content .c-columns .wrapper {
+        margin-top: 0; } }
+  body .section .content .c-columns .c-logo,
+  .section .content .c-columns .c-logo {
+    background: none; }
+
+body .section .content p,
+.section .content p {
+  text-align: left; }
 
 .top {
   padding-top: 40px;
@@ -2710,3 +2747,192 @@ body .section .content .c-columns,
     .top a:hover {
       border-left: 2px solid #ffb500;
       letter-spacing: 0.2px; }
+
+.normal {
+  background-color: #A8A878;
+  color: white; }
+
+.water {
+  background-color: #6890F0;
+  color: white; }
+
+.poison {
+  background-color: #A040A0;
+  color: white; }
+
+.grass {
+  background-color: #78C850;
+  color: white; }
+
+.flying {
+  background-color: #A890F0;
+  color: white; }
+
+.ground {
+  background-color: #E0C068;
+  color: white; }
+
+.fire {
+  background-color: #F08030;
+  color: white; }
+
+.electric {
+  background-color: #F8D030;
+  color: white; }
+
+.fighting {
+  background-color: #C03028;
+  color: white; }
+
+.bug {
+  background-color: #A8B820;
+  color: white; }
+
+.psychic {
+  background-color: #F85888;
+  color: white; }
+
+.rock {
+  background-color: #B8A038;
+  color: white; }
+
+.legendary {
+  background-color: #f8d355;
+  color: white; }
+
+.all-recipes {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr; }
+  @media (min-width: 1030px) {
+    .all-recipes {
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 740px) and (max-width: 800px) {
+    .all-recipes {
+      grid-template-columns: 1fr 1fr; } }
+
+.recipe-container {
+  margin-top: 5px; }
+  .recipe-container .attract-header {
+    position: relative;
+    text-align: center;
+    border-radius: 4px; }
+    .recipe-container .attract-header .recipe-name {
+      font-size: 75%; }
+  .recipe-container p {
+    margin: 0; }
+  .recipe-container .only-expanded {
+    display: none; }
+  .recipe-container .recipes {
+    height: 55px;
+    overflow: hidden; }
+  .recipe-container .ingredients h6 {
+    text-align: center; }
+  .recipe-container.expanded {
+    border-left: 1px solid #ccc;
+    padding-left: 6px;
+    margin-left: -7px; }
+    .recipe-container.expanded .only-expanded {
+      display: block; }
+    .recipe-container.expanded .recipes {
+      height: auto; }
+  .recipe-container .expand-button {
+    font-size: 33px;
+    line-height: 27px;
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff4f;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px auto;
+    transition: letter-spacing 0.3s; }
+    .recipe-container .expand-button:hover {
+      letter-spacing: 1px; }
+
+.ingredient-types {
+  background-color: #f5f5f5;
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 4px; }
+
+.ingredient-container {
+  display: flex; }
+  .ingredient-container .line {
+    border-right: 1px solid #EEE;
+    margin: 0px 2px 0px 4px; }
+  .ingredient-container .quality {
+    background-color: #CCC;
+    border-radius: 50%;
+    height: 30px;
+    color: white;
+    width: 30px;
+    padding: 4px 10px;
+    font-weight: bold;
+    margin: 10px 4px; }
+    .ingredient-container .quality.quality-SP {
+      padding: 4px 8px;
+      background-color: #ffa500; }
+    .ingredient-container .quality.quality-VG {
+      padding: 4px 6px;
+      background-color: #c000ff; }
+    .ingredient-container .quality.quality-G {
+      background-color: #00adff; }
+    .ingredient-container .quality.quality-B {
+      background-color: #00bd29; }
+  .ingredient-container.tiny .ingredient {
+    width: 40px;
+    height: 36px;
+    background-image: url("/img/ingredient-sprite-tiny.png"); }
+    .ingredient-container.tiny .ingredient.ingredient-T {
+      background-position: 0px 0px; }
+    .ingredient-container.tiny .ingredient.ingredient-B {
+      background-position: -40px 0px; }
+    .ingredient-container.tiny .ingredient.ingredient-A {
+      background-position: -80px 0px; }
+    .ingredient-container.tiny .ingredient.ingredient-F {
+      background-position: -120px 0px; }
+    .ingredient-container.tiny .ingredient.ingredient-X {
+      background-position: -160px 0px; }
+    .ingredient-container.tiny .ingredient.ingredient-R {
+      background-position: 0px -36px; }
+    .ingredient-container.tiny .ingredient.ingredient-I {
+      background-position: -40px -36px; }
+    .ingredient-container.tiny .ingredient.ingredient-H {
+      background-position: -80px -36px; }
+    .ingredient-container.tiny .ingredient.ingredient-M {
+      background-position: -120px -36px; }
+    .ingredient-container.tiny .ingredient.ingredient-S {
+      background-position: -160px -36px; }
+    .ingredient-container.tiny .ingredient.ingredient-U {
+      background-position: 0px -72px; }
+  .ingredient-container .ingredient {
+    width: 60px;
+    height: 53px;
+    background-image: url("/img/ingredient-sprite-small.png"); }
+    .ingredient-container .ingredient.ingredient-T {
+      background-position: 0px 0px; }
+    .ingredient-container .ingredient.ingredient-B {
+      background-position: -60px 0px; }
+    .ingredient-container .ingredient.ingredient-A {
+      background-position: -120px 0px; }
+    .ingredient-container .ingredient.ingredient-F {
+      background-position: -180px 0px; }
+    .ingredient-container .ingredient.ingredient-X {
+      background-position: -240px 0px; }
+    .ingredient-container .ingredient.ingredient-R {
+      background-position: 0px -53px; }
+    .ingredient-container .ingredient.ingredient-I {
+      background-position: -60px -53px; }
+    .ingredient-container .ingredient.ingredient-H {
+      background-position: -120px -53px; }
+    .ingredient-container .ingredient.ingredient-M {
+      background-position: -180px -53px; }
+    .ingredient-container .ingredient.ingredient-S {
+      background-position: -240px -53px; }
+    .ingredient-container .ingredient.ingredient-U {
+      background-position: 0px -107px; }
