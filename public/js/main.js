@@ -86,73 +86,7 @@ $(document).on('ready', function () {
     else {
         scrollOverflow = true;
     }
-    // Get sections name
-    for (var i = 0; i < pageSectionDivs.length; i++) {
-        pageSections.push(pageSectionDivs[i]);
-    }
-    window.asyncEach(pageSections, function (pageSection, cb) {
-        var anchor = pageSection.getAttribute('data-section');
-        pageAnchors.push(anchor + "");
-        cb();
-    }, function (err) {
-        // Init plugin
-        if (mainPage.height()) {
-            // config fullpage.js
-            return;
-            mainPage.fullpage({
-                menu: '#qmenu',
-                anchors: pageAnchors,
-                verticalCentered: false,
-                css3: true,
-                navigation: true,
-                responsiveWidth: 601,
-                responsiveHeight: 401,
-                scrollOverflow: scrollOverflow,
-                scrollOverflowOptions: {
-                    click: true,
-                    submit: true,
-                },
-                afterRender: function () {
-                    // // Fired when page is rendered
-                    // // Append scroll down text to fpnav
-                    // var fpNav = $('#fp-nav');
-                    // fpNav.remove();
-                    // bodySelector.append('<div id="fp-nav-wrapper"></div>');
-                    // var fpNavWrapper = $('#fp-nav-wrapper');
-                    // fpNavWrapper.append(fpNav);
-                    // fpNavWrapper.append($('.site-footer .scrolldown'));
 
-
-                },
-                afterResize: function () {
-                    // var pluginContainer = $(this);
-                    // $.fn.fullpage.reBuild();
-                },
-                onLeave: function (index, nextIndex, direction) {
-                    // // Behavior when a full page is leaved
-                    // arrowElem.addClass('gone');
-                    // pageElem.addClass('transition');
-                    // slideElem.removeClass('transition');
-                    // pageElem.removeClass('transition');
-                    //
-                    // nextSectionDOM = sectionSelector[(nextIndex - 1)];
-                    // nextSection = $(nextSectionDOM);
-                    // if (nextSection.hasClass('dark-bg')) {
-                    // 	bodySelector.addClass('dark-section');
-                    // 	headerLogo.addClass('dark-bg');
-                    // }
-                    // else {
-                    // 	bodySelector.removeClass('dark-section');
-                    // 	headerLogo.removeClass('dark-bg');
-                    // }
-                },
-                afterLoad: function (anchorLink, index) {
-
-                }
-            });
-
-        }
-    });
     // Scroll to fullPage.js next/previous section
     $('.scrolldown a').on('click', function () {
         $.fn.fullpage.moveSectionDown();

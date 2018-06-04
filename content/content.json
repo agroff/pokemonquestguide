@@ -9,7 +9,18 @@
         ],
         "title"       : "Pokemon Quest Cooking Recipes",
         "template"    : "",
-        "description" : "Use our mobile friendly cheat sheet as a quick reference when cooking in pokemon quest"
+        "description" : "Our mobile optimized cheat sheet has recipes for every type of Pokemon. Easy reference for elusive types like Electric, Psychic, Fighting and Water pokemon."
+    },
+    {
+        "name"        : "cooking-simulator",
+        "slug"        : "cooking-simulator-ingredient-calculator",
+        "category"    : "tools",
+        "scripts"     : [
+            "simulator.js"
+        ],
+        "title"       : "Pokemon Quest Cooking Simulator",
+        "template"    : "",
+        "description" : "Plug your ingredients into our cooking simulator and we'll predict what kind of pokemon it will create. We'll remember your recipe for next time so you know how you got your best pokemon."
     },
     {
         "name"        : "about",
@@ -21,7 +32,7 @@
     },
     {
         "name"        : "index",
-        "slug"        : "",
+        "slug"        : "/",
         "category"    : "pages",
         "title"       : "Welcome to Pokemon Quest Guide",
         "template"    : "",

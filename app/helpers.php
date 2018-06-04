@@ -1,5 +1,8 @@
 <?php
 
+require "Content.php";
+require "Html.php";
+
 function view($file, $data = [])
 {
     extract($data);
@@ -14,6 +17,16 @@ function fullView($file, $data = [])
     view($file, $data);
     echo "</div> \n";
     view("layout/footer", $data);
+}
+
+function jsonResponse($name)
+{
+    $data = [
+        "status" => 200
+    ];
+    $data[$name] = getData($name);
+    echo json_encode($data);
+    die();
 }
 
 function getData($name)
@@ -33,8 +46,8 @@ function getData($name)
 function appendContentData($data, $content)
 {
     if (!empty($content["data"])) {
-        foreach ($content["data"] as $file) {
-            $data[$file] = getData($file);
+        foreach ($content["data"] as $name) {
+            $data[$name] = Content::get($name);
         }
     }
 
@@ -44,20 +57,21 @@ function appendContentData($data, $content)
 function findIngredient($abbreviation, $ingredients)
 {
     foreach ($ingredients as $ingredient) {
-        if($ingredient["abbreviation"] === $abbreviation){
+        if ($ingredient["abbreviation"] === $abbreviation) {
             return $ingredient;
         }
     }
 
     return [];
 }
+
 function getQualityName($quality)
 {
-    switch ($quality){
+    switch ($quality) {
         case "SP":
             return "Special";
         case "VG":
-            return "Very Goof";
+            return "Very Good";
         case "G":
             return "Good";
         case "B":
@@ -65,6 +79,25 @@ function getQualityName($quality)
     }
 
     return "Unknown";
+}
+
+function linkTo($name, $linkContents = false)
+{
+    $content = Content::get("content");
+
+
+    foreach ($content as $thing) {
+        if ($thing["name"] === $name) {
+
+            if (!$linkContents) {
+                $linkContents = $thing["title"];
+            }
+
+            echo '<a href="' . $thing["slug"] . '">' . $linkContents . '</a>';
+            return;
+        }
+    }
+    echo "ERROR: Could not link to name `$name`";
 }
 
 function renderRecipe($recipe, $ingredients)
@@ -102,12 +135,13 @@ function renderRecipe($recipe, $ingredients)
     echo "</div>";
 }
 
-function amountToCount($amount){
-    switch ($amount){
+function amountToCount($amount)
+{
+    switch ($amount) {
         case "alot":
             return "3";
         case "whole-lot":
-            return "4-5";
+            return "4";
         case "few":
             return "2";
     }
@@ -118,14 +152,14 @@ function amountToCount($amount){
 function renderIngredientAmount($ingredientType, $amount, $allIngredients)
 {
     $amount = trim($amount);
-    if($amount === ''){
+    if ($amount === '') {
         return;
     }
 
     $englishAmount = str_replace("-", " ", $amount);
     $englishAmount = ucwords($englishAmount);
     $englishCount = amountToCount($amount);
-    $englishType = ucwords ($ingredientType);
+    $englishType = ucwords($ingredientType);
 
     $explanation = $englishAmount . " ($englishCount) of ";
     $typeExplanation = "<br><b>$englishType</b> Ingredients: ";
@@ -135,8 +169,8 @@ function renderIngredientAmount($ingredientType, $amount, $allIngredients)
     echo $explanation . $typeExplanation;
     echo "</div>";
     echo "<div class='ingredient-container tiny'>";
-    foreach($allIngredients as $ingredient){
-        if($ingredient["attributes"][$ingredientType]){
+    foreach ($allIngredients as $ingredient) {
+        if ($ingredient["attributes"][$ingredientType]) {
             $abbreviation = $ingredient["abbreviation"];
             $name = $ingredient["name"];
             echo "<div title=\"$name\" class=\"ingredient ingredient-$abbreviation\">";

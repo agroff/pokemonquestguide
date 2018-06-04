@@ -8,11 +8,8 @@ $uri = trim($uri, '/');
 $uri = strtolower($uri);
 
 if($uri === '') {
-    //$uri = 'index';
+    $uri = '/';
 }
-
-//dbg($uri);
-
 
 $data = [];
 $data["meta"] = [
@@ -41,6 +38,14 @@ if($uri === 'index') {
     view("index", $data);
     die();
 }
+
+if($uri === 'ajax/ingredients'){
+    jsonResponse('ingredients');
+}
+if($uri === 'ajax/recipes'){
+    jsonResponse('recipes');
+}
+
 
 http_response_code(404);
 echo "404 not found."; // provide your own HTML for the error page

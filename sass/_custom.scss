@@ -22,12 +22,39 @@ h2 {
         font-size: 1.1rem;
     }
 }
-
+.content{
+    p{
+        margin: 6px 0px;
+    }
+}
+ul.disk,
+ul.disc{
+    //list-style: disc inside;
+}
 #fp-nav {
     display: none;
 }
+body .section .content p.warning,
+p.warning{
+    text-align: center;
+    font-size:85%;
+    line-height:130%;
+    color:#F00;
+}
 header.header-top{
     z-index: 400;
+}
+a.hide-link,
+a.show-link{
+
+    display: block;
+    text-align: center;
+    margin-top: -12px;
+
+    @media(min-width:500px){
+        text-align:right;
+        margin-top: -21px;
+    }
 }
 .main-menu{
     background: #b1837f;
@@ -113,6 +140,25 @@ body .section,
             //color:darken($accentColor, 5);
             letter-spacing: 0.2px;
         }
+    }
+}
+
+button.game,
+a.game{
+    background-color: #ffbc15;
+    color:white;
+    border-radius:8px;
+    padding:10px;
+    font-size: 18px;
+    border: 3px solid #f5ae00;
+    display:block;
+    margin:auto;
+    cursor:pointer;
+
+    &.disabled{
+        background-color: #9a730a;
+        color: #999;
+        border-color: #9d5d03
     }
 }
 
@@ -357,44 +403,51 @@ body .section,
         }
     }
 
-    .ingredient {
-        width: 60px;
-        height: 53px;
-        background-image: url("/img/ingredient-sprite-small.png");
 
-        &.ingredient-T {
-            background-position: 0px 0px;
-        }
-        &.ingredient-B {
-            background-position: -60px 0px;
-        }
-        &.ingredient-A {
-            background-position: -120px 0px;
-        }
-        &.ingredient-F {
-            background-position: -180px 0px;
-        }
-        &.ingredient-X {
-            background-position: -240px 0px;
-        }
+}
 
-        &.ingredient-R {
-            background-position: 0px -53px;
-        }
-        &.ingredient-I {
-            background-position: -60px -53px;
-        }
-        &.ingredient-H {
-            background-position: -120px -53px;
-        }
-        &.ingredient-M {
-            background-position: -180px -53px;
-        }
-        &.ingredient-S {
-            background-position: -240px -53px;
-        }
-        &.ingredient-U {
-            background-position: 0px -107px;
-        }
+.ingredient {
+    width: 60px;
+    height: 53px;
+    z-index: 301;
+    background-image: url("/img/ingredient-sprite-small.png");
+
+    &.animate-ingredient{
+        transition: all 0.2s ease-in;
+    }
+
+    &.ingredient-T {
+        background-position: 0px 0px;
+    }
+    &.ingredient-B {
+        background-position: -60px 0px;
+    }
+    &.ingredient-A {
+        background-position: -120px 0px;
+    }
+    &.ingredient-F {
+        background-position: -180px 0px;
+    }
+    &.ingredient-X {
+        background-position: -240px 0px;
+    }
+
+    &.ingredient-R {
+        background-position: 0px -53px;
+    }
+    &.ingredient-I {
+        background-position: -60px -53px;
+    }
+    &.ingredient-H {
+        background-position: -120px -53px;
+    }
+    &.ingredient-M {
+        background-position: -180px -53px;
+    }
+    &.ingredient-S {
+        background-position: -240px -53px;
+    }
+    &.ingredient-U {
+        background-position: 0px -107px;
     }
 }

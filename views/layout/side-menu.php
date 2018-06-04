@@ -2,14 +2,12 @@
     Featured Content
 </h4>
 
-<a href="/cooking-recipe-cheatsheet">
-    Cooking Recipe Cheatsheet
-</a>
-
-<a href="/what-is-pokemon-quest">
-    About Pokemon Quest
-</a>
-
+<?php
+linkTo("index", "Home");
+linkTo("cooking-simulator", "Cooking Simulator");
+linkTo("recipe-cheatsheet", "Recipe Cheatsheet");
+linkTo("about", "About Pokemon Quest");
+?>
 
 <h4>
     Useful Resources

@@ -2,13 +2,14 @@
     {
         "name"         : "Tiny Mushrooms",
         "abbreviation" : "T",
+        "quality"      : 1,
         "attributes"   : {
             "sweet"     : false,
             "small"     : true,
             "big"       : false,
             "soft"      : true,
             "hard"      : false,
-            "mushrooms" : false,
+            "mushrooms" : true,
             "minerals"  : false,
             "plants"    : false,
             "blue"      : false,
@@ -21,6 +22,7 @@
     {
         "name"         : "Big Roots",
         "abbreviation" : "R",
+        "quality"      : 2,
         "attributes"   : {
             "sweet"     : false,
             "small"     : false,
@@ -40,6 +42,7 @@
     {
         "name"         : "Bluk Berries",
         "abbreviation" : "B",
+        "quality"      : 1,
         "attributes"   : {
             "sweet"     : true,
             "small"     : true,
@@ -59,6 +62,7 @@
     {
         "name"         : "Icy Rocks",
         "abbreviation" : "I",
+        "quality"      : 2,
         "attributes"   : {
             "sweet"     : false,
             "small"     : false,
@@ -78,6 +82,7 @@
     {
         "name"         : "Apricorns",
         "abbreviation" : "A",
+        "quality"      : 1,
         "attributes"   : {
             "sweet"     : false,
             "small"     : true,
@@ -97,6 +102,7 @@
     {
         "name"         : "Honey",
         "abbreviation" : "H",
+        "quality"      : 2,
         "attributes"   : {
             "sweet"     : true,
             "small"     : false,
@@ -116,6 +122,7 @@
     {
         "name"         : "Fossils",
         "abbreviation" : "F",
+        "quality"      : 1,
         "attributes"   : {
             "sweet"     : false,
             "small"     : true,
@@ -135,6 +142,7 @@
     {
         "name"         : "Balm Mushrooms",
         "abbreviation" : "M",
+        "quality"      : 2,
         "attributes"   : {
             "sweet"     : false,
             "small"     : false,
@@ -154,6 +162,7 @@
     {
         "name"         : "Mystic Shells",
         "abbreviation" : "S",
+        "quality"      : 2,
         "attributes"   : {
             "sweet"     : false,
             "small"     : false,
@@ -171,7 +180,7 @@
         }
     },
     {
-        "name" : "Any Ingredient",
+        "name"         : "Any Ingredient",
         "abbreviation" : "U",
         "attributes"   : {
             "sweet"     : false,

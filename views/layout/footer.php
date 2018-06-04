@@ -38,6 +38,9 @@
 <script src="/js/main.js"></script>
 <script src="/js/pokemonApp.js<?php o('?t='.time()); ?>"></script>
 
+<?php foreach($meta["scripts"] as $script): ?>
+    <script src="/js/<?php o($script . '?t='.time()); ?>"></script>
+<?php endforeach; ?>
 
 
 </body>

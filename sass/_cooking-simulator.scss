@@ -1,0 +1,180 @@
+
+.cooking-pot{
+    background-image: url(/img/cooking/pot.png);
+    background-size: cover;
+    width: 320px;
+    height: 218px;
+    margin-bottom:10px;
+    position:relative;
+
+    .slot{
+        position: absolute;
+        background-color: white;
+        width:60px;
+        height:53px;
+        opacity:0;
+
+        &.slot-1{
+            top: 27px;
+            left: 92px;
+        }
+        &.slot-2{
+            top: 27px;
+            left: 168px;
+        }
+        &.slot-3{
+            top: 104px;
+            left: 53px;
+        }
+        &.slot-4{
+            top: 104px;
+            left: 130px;
+        }
+        &.slot-5{
+            top: 104px;
+            left: 206px;
+        }
+    }
+}
+
+.simulator-ingredients{
+    background-color: #dea057;
+    max-width: 320px;
+    border-radius: 6px;
+    margin-top:5px;
+
+    .ingredient{
+        border-radius:8px;
+        background-color: #f7b569;
+    }
+}
+
+.result{
+    background-color: #fff3a6;
+    border-radius: 10px;
+    border-left: 12px solid #e9a200;
+    position: relative;
+
+    &.none{
+        color:#f7b569;
+    }
+
+    .number{
+        background-color:#ffc617;
+        display:inline-block;
+        width:30px;
+        text-align: center;
+        color:white;
+    }
+    #result-header{
+        text-align: left;
+        border-bottom:3px solid #ffc617;
+        margin-bottom: 0;
+    }
+
+    #rarity-indicator {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top:3px;
+        right:8px;
+
+        &.good {
+            background-color: #00adff;
+        }
+        &.very-good {
+            background-color: #c000ff;
+        }
+        &.special {
+            background-color: #ffa500;
+        }
+        &.basic {
+            background-color: #00bd29;
+        }
+    }
+
+    .result-body{
+        display:flex;
+        #dish-image{
+            width:84px;
+            background-image: url('/img/cooking/dishes.png');
+
+            &.image-0{
+                background-position: -339px -348px;
+            }
+            &.image-1{
+                background-position: -0px -0px;
+            }
+            &.image-2{
+                background-position: (-84px * 1) -0px;
+            }
+            &.image-3{
+                background-position: (-84px * 2) -0px;
+            }
+            &.image-4{
+                background-position: (-84px * 3) -0px;
+            }
+            &.image-5{
+                background-position: (-84px * 4) -0px;
+            }
+            &.image-6{
+                background-position: (-84px * 5) -0px;
+            }
+            &.image-7{
+                background-position: (-84px * 6) -0px;
+            }
+            &.image-8{
+                background-position: (-84px * 0) -72px;
+            }
+            &.image-9{
+                background-position: (-84px * 1) -72px;
+            }
+            &.image-10{
+                background-position: (-84px * 2) -72px;
+            }
+            &.image-11{
+                background-position: (-84px * 3) -72px;
+            }
+            &.image-12{
+                background-position: (-84px * 4) -72px;
+            }
+            &.image-13{
+                background-position: (-84px * 5) -72px;
+            }
+            &.image-14{
+                background-position: (-84px * 6) -72px;
+            }
+            &.image-15{
+                background-position: (-84px * 0) -144px;
+            }
+            &.image-16{
+                background-position: (-84px * 1) -144px;
+            }
+            &.image-17{
+                background-position: (-84px * 2) -144px;
+            }
+            &.image-18{
+                background-position: (-84px * 3) -144px;
+            }
+        }
+        .text{
+            margin: 8px 0px 8px 10px;
+            padding: 10px 10px;
+            background-color: #f7b569;
+            border-radius: 4px;
+            width:230px;
+        }
+    }
+
+}
+
+.past-recipe{
+    padding:6px;
+    border-radius:6px;
+    background-color: #f7b569;
+    margin-bottom: 8px;
+}
+#cook-button{
+    margin-top:10px;
+}

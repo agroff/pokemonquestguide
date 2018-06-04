@@ -2686,11 +2686,32 @@ h2 {
   h2 {
     font-size: 1.1rem; } }
 
+.content p {
+  margin: 6px 0px; }
+
 #fp-nav {
   display: none; }
 
+body .section .content p.warning,
+p.warning {
+  text-align: center;
+  font-size: 85%;
+  line-height: 130%;
+  color: #F00; }
+
 header.header-top {
   z-index: 400; }
+
+a.hide-link,
+a.show-link {
+  display: block;
+  text-align: center;
+  margin-top: -12px; }
+  @media (min-width: 500px) {
+    a.hide-link,
+    a.show-link {
+      text-align: right;
+      margin-top: -21px; } }
 
 .main-menu {
   background: #b1837f;
@@ -2753,6 +2774,23 @@ body .section .content p,
     .top a:hover {
       border-left: 2px solid #ffb500;
       letter-spacing: 0.2px; }
+
+button.game,
+a.game {
+  background-color: #ffbc15;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  border: 3px solid #f5ae00;
+  display: block;
+  margin: auto;
+  cursor: pointer; }
+  button.game.disabled,
+  a.game.disabled {
+    background-color: #9a730a;
+    color: #999;
+    border-color: #9d5d03; }
 
 .normal {
   background-color: #A8A878;
@@ -2924,29 +2962,162 @@ body .section .content p,
       background-position: -160px -36px; }
     .ingredient-container.tiny .ingredient.ingredient-U {
       background-position: 0px -72px; }
-  .ingredient-container .ingredient {
+
+.ingredient {
+  width: 60px;
+  height: 53px;
+  z-index: 301;
+  background-image: url("/img/ingredient-sprite-small.png"); }
+  .ingredient.animate-ingredient {
+    transition: all 0.2s ease-in; }
+  .ingredient.ingredient-T {
+    background-position: 0px 0px; }
+  .ingredient.ingredient-B {
+    background-position: -60px 0px; }
+  .ingredient.ingredient-A {
+    background-position: -120px 0px; }
+  .ingredient.ingredient-F {
+    background-position: -180px 0px; }
+  .ingredient.ingredient-X {
+    background-position: -240px 0px; }
+  .ingredient.ingredient-R {
+    background-position: 0px -53px; }
+  .ingredient.ingredient-I {
+    background-position: -60px -53px; }
+  .ingredient.ingredient-H {
+    background-position: -120px -53px; }
+  .ingredient.ingredient-M {
+    background-position: -180px -53px; }
+  .ingredient.ingredient-S {
+    background-position: -240px -53px; }
+  .ingredient.ingredient-U {
+    background-position: 0px -107px; }
+
+.cooking-pot {
+  background-image: url(/img/cooking/pot.png);
+  background-size: cover;
+  width: 320px;
+  height: 218px;
+  margin-bottom: 10px;
+  position: relative; }
+  .cooking-pot .slot {
+    position: absolute;
+    background-color: white;
     width: 60px;
     height: 53px;
-    background-image: url("/img/ingredient-sprite-small.png"); }
-    .ingredient-container .ingredient.ingredient-T {
-      background-position: 0px 0px; }
-    .ingredient-container .ingredient.ingredient-B {
-      background-position: -60px 0px; }
-    .ingredient-container .ingredient.ingredient-A {
-      background-position: -120px 0px; }
-    .ingredient-container .ingredient.ingredient-F {
-      background-position: -180px 0px; }
-    .ingredient-container .ingredient.ingredient-X {
-      background-position: -240px 0px; }
-    .ingredient-container .ingredient.ingredient-R {
-      background-position: 0px -53px; }
-    .ingredient-container .ingredient.ingredient-I {
-      background-position: -60px -53px; }
-    .ingredient-container .ingredient.ingredient-H {
-      background-position: -120px -53px; }
-    .ingredient-container .ingredient.ingredient-M {
-      background-position: -180px -53px; }
-    .ingredient-container .ingredient.ingredient-S {
-      background-position: -240px -53px; }
-    .ingredient-container .ingredient.ingredient-U {
-      background-position: 0px -107px; }
+    opacity: 0; }
+    .cooking-pot .slot.slot-1 {
+      top: 27px;
+      left: 92px; }
+    .cooking-pot .slot.slot-2 {
+      top: 27px;
+      left: 168px; }
+    .cooking-pot .slot.slot-3 {
+      top: 104px;
+      left: 53px; }
+    .cooking-pot .slot.slot-4 {
+      top: 104px;
+      left: 130px; }
+    .cooking-pot .slot.slot-5 {
+      top: 104px;
+      left: 206px; }
+
+.simulator-ingredients {
+  background-color: #dea057;
+  max-width: 320px;
+  border-radius: 6px;
+  margin-top: 5px; }
+  .simulator-ingredients .ingredient {
+    border-radius: 8px;
+    background-color: #f7b569; }
+
+.result {
+  background-color: #fff3a6;
+  border-radius: 10px;
+  border-left: 12px solid #e9a200;
+  position: relative; }
+  .result.none {
+    color: #f7b569; }
+  .result .number {
+    background-color: #ffc617;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: white; }
+  .result #result-header {
+    text-align: left;
+    border-bottom: 3px solid #ffc617;
+    margin-bottom: 0; }
+  .result #rarity-indicator {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 3px;
+    right: 8px; }
+    .result #rarity-indicator.good {
+      background-color: #00adff; }
+    .result #rarity-indicator.very-good {
+      background-color: #c000ff; }
+    .result #rarity-indicator.special {
+      background-color: #ffa500; }
+    .result #rarity-indicator.basic {
+      background-color: #00bd29; }
+  .result .result-body {
+    display: flex; }
+    .result .result-body #dish-image {
+      width: 84px;
+      background-image: url("/img/cooking/dishes.png"); }
+      .result .result-body #dish-image.image-0 {
+        background-position: -339px -348px; }
+      .result .result-body #dish-image.image-1 {
+        background-position: -0px -0px; }
+      .result .result-body #dish-image.image-2 {
+        background-position: -84px 0px; }
+      .result .result-body #dish-image.image-3 {
+        background-position: -168px 0px; }
+      .result .result-body #dish-image.image-4 {
+        background-position: -252px 0px; }
+      .result .result-body #dish-image.image-5 {
+        background-position: -336px 0px; }
+      .result .result-body #dish-image.image-6 {
+        background-position: -420px 0px; }
+      .result .result-body #dish-image.image-7 {
+        background-position: -504px 0px; }
+      .result .result-body #dish-image.image-8 {
+        background-position: 0px -72px; }
+      .result .result-body #dish-image.image-9 {
+        background-position: -84px -72px; }
+      .result .result-body #dish-image.image-10 {
+        background-position: -168px -72px; }
+      .result .result-body #dish-image.image-11 {
+        background-position: -252px -72px; }
+      .result .result-body #dish-image.image-12 {
+        background-position: -336px -72px; }
+      .result .result-body #dish-image.image-13 {
+        background-position: -420px -72px; }
+      .result .result-body #dish-image.image-14 {
+        background-position: -504px -72px; }
+      .result .result-body #dish-image.image-15 {
+        background-position: 0px -144px; }
+      .result .result-body #dish-image.image-16 {
+        background-position: -84px -144px; }
+      .result .result-body #dish-image.image-17 {
+        background-position: -168px -144px; }
+      .result .result-body #dish-image.image-18 {
+        background-position: -252px -144px; }
+    .result .result-body .text {
+      margin: 8px 0px 8px 10px;
+      padding: 10px 10px;
+      background-color: #f7b569;
+      border-radius: 4px;
+      width: 230px; }
+
+.past-recipe {
+  padding: 6px;
+  border-radius: 6px;
+  background-color: #f7b569;
+  margin-bottom: 8px; }
+
+#cook-button {
+  margin-top: 10px; }
