@@ -1,4 +1,13 @@
 
+.cooking-simulator-container{
+    .cooking-pot,
+    .ingredient-container,
+    #prediction-result{
+        margin:auto;
+        margin-top:5px;
+    }
+}
+
 .cooking-pot{
     background-image: url(/img/cooking/pot.png);
     background-size: cover;
@@ -54,6 +63,7 @@
     border-radius: 10px;
     border-left: 12px solid #e9a200;
     position: relative;
+    max-width:400px;
 
     &.none{
         color:#f7b569;
@@ -70,6 +80,7 @@
         text-align: left;
         border-bottom:3px solid #ffc617;
         margin-bottom: 0;
+        font-size: 20px;
     }
 
     #rarity-indicator {
@@ -159,6 +170,7 @@
             }
         }
         .text{
+            font-size: 13px;
             margin: 8px 0px 8px 10px;
             padding: 10px 10px;
             background-color: #f7b569;
@@ -174,6 +186,18 @@
     border-radius:6px;
     background-color: #f7b569;
     margin-bottom: 8px;
+
+    .prediction-line{
+        text-align: center;
+    }
+    
+    .date{
+        color: #966629;
+        font-size: 90%;
+        .expeditions{
+            float:right;
+        }
+    }
 }
 #cook-button{
     margin-top:10px;

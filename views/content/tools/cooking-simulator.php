@@ -35,7 +35,7 @@
 <div class="cooking-simulator-container">
 
     <div class="row">
-        <div class="medium-8 columns">
+        <div class="medium-7 columns">
             <div class="cooking-pot">
                 <div class="slot slot-1"></div>
                 <div class="slot slot-2"></div>
@@ -88,7 +88,7 @@
 
             <hr>
         </div>
-        <div class="medium-4 columns">
+        <div class="medium-5 columns">
             <h4>Past Recipes</h4>
 
             <div class="pastRecipes">

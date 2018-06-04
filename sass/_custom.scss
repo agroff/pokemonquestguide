@@ -22,63 +22,76 @@ h2 {
         font-size: 1.1rem;
     }
 }
-.content{
-    p{
+
+.content {
+    p {
         margin: 6px 0px;
     }
 }
+
 ul.disk,
-ul.disc{
+ul.disc {
     //list-style: disc inside;
 }
+
+@media (min-width: 1025px) {
+    .section .content .c-columns .wrapper {
+        padding-right: 50px;
+    }
+}
+
 #fp-nav {
     display: none;
 }
+
 body .section .content p.warning,
-p.warning{
+p.warning {
     text-align: center;
-    font-size:85%;
-    line-height:130%;
-    color:#F00;
+    font-size: 85%;
+    line-height: 130%;
+    color: #F00;
 }
-header.header-top{
+
+header.header-top {
     z-index: 400;
 }
+
 a.hide-link,
-a.show-link{
+a.show-link {
 
     display: block;
     text-align: center;
     margin-top: -12px;
 
-    @media(min-width:500px){
-        text-align:right;
+    @media(min-width: 500px) {
+        text-align: right;
         margin-top: -21px;
     }
 }
-.main-menu{
+
+.main-menu {
     background: #b1837f;
     padding: 70px 30px;
-    color:black;
+    color: black;
     text-align: center;
-    position:fixed;
-    z-index:310;
-    height:100%;
+    position: fixed;
+    z-index: 310;
+    height: 100%;
 
     @media (min-width: 600px) {
-        display:none;
+        display: none;
     }
 
-    h4,h5{
-        color:black;
+    h4, h5 {
+        color: black;
         margin-top: 10px;
         margin-bottom: 0px;
     }
-    a{
-        color:$accentColor;
-        display:block;
-        font-size:1rem;
-        padding:4px;
+    a {
+        color: $accentColor;
+        display: block;
+        font-size: 1rem;
+        padding: 4px;
     }
 }
 
@@ -108,7 +121,7 @@ body .section,
 
         }
 
-        p{
+        p {
             text-align: left;
         }
     }
@@ -144,18 +157,18 @@ body .section,
 }
 
 button.game,
-a.game{
+a.game {
     background-color: #ffbc15;
-    color:white;
-    border-radius:8px;
-    padding:10px;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
     font-size: 18px;
     border: 3px solid #f5ae00;
-    display:block;
-    margin:auto;
-    cursor:pointer;
+    display: block;
+    margin: auto;
+    cursor: pointer;
 
-    &.disabled{
+    &.disabled {
         background-color: #9a730a;
         color: #999;
         border-color: #9d5d03
@@ -227,12 +240,12 @@ a.game{
     color: white;
 }
 
-.all-recipes{
-    display:grid;
+.all-recipes {
+    display: grid;
     grid-column-gap: 10px;
     grid-template-columns: 1fr;
 
-    @media (min-width: 1030px){
+    @media (min-width: 1030px) {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -241,8 +254,9 @@ a.game{
     }
 
 }
+
 .recipe-container {
-    margin-top:5px;
+    margin-top: 5px;
 
     .attract-header {
         font-size: 14px;
@@ -262,40 +276,40 @@ a.game{
         margin: 0;
     }
 
-    .only-expanded{
-        display:none;
+    .only-expanded {
+        display: none;
     }
-    .recipes{
+    .recipes {
         height: 55px;
         overflow: hidden;
     }
 
-    .ingredients{
-        h6{
+    .ingredients {
+        h6 {
             text-align: center;
         }
     }
 
-    &.expanded{
+    &.expanded {
         border-left: 1px solid #ccc;
-        padding-left:6px;
-        margin-left:-7px;
+        padding-left: 6px;
+        margin-left: -7px;
 
-        .only-expanded{
-            display:block;
+        .only-expanded {
+            display: block;
         }
-        .recipes{
+        .recipes {
             height: auto;
         }
     }
 
-    .expand-button{
+    .expand-button {
         font-size: 28px;
         line-height: 22px;
         display: block;
         position: absolute;
-        left:8px;
-        top:-1px;
+        left: 8px;
+        top: -1px;
         width: 26px;
         height: 26px;
         background-color: #ffffff4f;
@@ -305,7 +319,7 @@ a.game{
         margin: 5px auto;
         transition: letter-spacing 0.3s;
 
-        &:hover{
+        &:hover {
             letter-spacing: 1px;
         }
     }
@@ -313,11 +327,11 @@ a.game{
 
 .ingredient-types {
     background-color: #f5f5f5;
-    padding:8px;
-    border-radius:4px;
-    margin-bottom:4px;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 4px;
 
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
@@ -354,14 +368,14 @@ a.game{
         }
     }
 
-    &.spaced{
+    &.spaced {
         .ingredient {
             margin: 6px auto;
         }
     }
 
-    &.tiny{
-        .ingredient{
+    &.tiny {
+        .ingredient {
             width: 40px;
             height: 36px;
             background-image: url("/img/ingredient-sprite-tiny.png");
@@ -403,7 +417,6 @@ a.game{
         }
     }
 
-
 }
 
 .ingredient {
@@ -412,7 +425,7 @@ a.game{
     z-index: 301;
     background-image: url("/img/ingredient-sprite-small.png");
 
-    &.animate-ingredient{
+    &.animate-ingredient {
         transition: all 0.2s ease-in;
     }
 

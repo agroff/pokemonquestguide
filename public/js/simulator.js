@@ -166,30 +166,30 @@ $(function () {
     };
 
     var getEnglishQuality = function (quality) {
-        if(quality >= 10){
+        if (quality >= 10) {
             return "Special";
         }
-        if(quality >= 8){
+        if (quality >= 8) {
             return "Very Good";
         }
-        if(quality >= 6){
+        if (quality >= 6) {
             return "Good";
         }
         return "Basic";
     };
 
-    var capitalize = function(string){
-            return string.charAt(0).toUpperCase() + string.slice(1);
+    var capitalize = function (string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
     };
 
     var qualityToExpeditions = function (quality) {
-        if(quality >= 10){
+        if (quality >= 10) {
             return 6;
         }
-        if(quality >= 8){
+        if (quality >= 8) {
             return 5;
         }
-        if(quality >= 6){
+        if (quality >= 6) {
             return 4;
         }
         return 2;
@@ -211,7 +211,7 @@ $(function () {
             $cookButton.removeClass("disabled");
             name = recipe.name + " A La Cube";
             number = recipe.number;
-            cssClass = recipe.name.replace(/\s+/,'-').toLowerCase();
+            cssClass = recipe.name.replace(/\s+/, '-').toLowerCase();
             type = capitalize(recipe.attracts);
             $("#prediction-result").removeClass('none');
         }
@@ -226,8 +226,8 @@ $(function () {
         $("#pokemon-type").text(type);
         $(".number").text(number);
         $("#expeditions").text(expeditions);
-        $("#dish-image").attr("class",'image-'+number);
-        $("#rarity-indicator").attr("class", englishQuality.replace(/\s+/,'-').toLowerCase());
+        $("#dish-image").attr("class", 'image-' + number);
+        $("#rarity-indicator").attr("class", englishQuality.replace(/\s+/, '-').toLowerCase());
 
     };
 
@@ -254,37 +254,48 @@ $(function () {
         $.getJSON("/ajax/recipes", function (data) {
             recipes = data.recipes;
 
-            $.each(recipes, function(i,item){
-                item["number"] = i +1;
+            $.each(recipes, function (i, item) {
+                item["number"] = i + 1;
                 recipes[i] = item;
             });
             cb();
         });
     };
 
-    var renderPastRecipes = function(){
+    var renderPastRecipes = function () {
         var html = '';
-        PQG.db.recipes.forEach(function(recipe){
+        var array = PQG.db.recipes.slice(0).reverse();
+        array.forEach(function (recipe) {
             var letters = recipe.recipe.split("");
+            var date = 'Date Unknown';
+            if (recipe.date) {
+                date = new Date(recipe.date).toLocaleString();
+            }
             html += '<div class="past-recipe">';
+
             html += '<div class="ingredient-container tiny spaced">';
-            letters.forEach(function(letter){
-                html += '<div class="ingredient ingredient-'+letter+'"></div>';
+            letters.forEach(function (letter) {
+                html += '<div class="ingredient ingredient-' + letter + '"></div>';
             });
             html += '</div>';
-            html += 'Prediction: ' + recipe.quality +' quality ' + recipe.type + ' pokemon';
-            html += ' in ' + recipe.expeditions + ' expeditions';
+            html += '<div class="prediction-line">';
+            html += recipe.quality + ' Quality ' + capitalize(recipe.type)  + ' Pokemon';
+            html += '</div>';
+            html += '<div class="date">';
+            html += date;
+            html += '<span class="expeditions">'+recipe.expeditions+' Expeditions</span>';
+            html += '</div>';
             html += '</div>';
         });
 
-        if(PQG.db.recipes.length == 0){
+        if (PQG.db.recipes.length == 0) {
             html = "Nothing cooked yet.";
         }
 
         $(".pastRecipes").html(html);
     };
 
-    var clearRecipe = function(){
+    var clearRecipe = function () {
         slots = [false, false, false, false, false];
         $(".animate-ingredient").remove();
         renderRecipe();
@@ -295,15 +306,16 @@ $(function () {
             addIngredient($(this));
         });
 
-        $("#cook-button").click(function(){
+        $("#cook-button").click(function () {
             var recipe = predictRecipe(),
-            quality = getRecipeQuality();
+                quality = getRecipeQuality();
 
             PQG.db.recipes.push({
-                recipe : slots.join(""),
-                quality : getEnglishQuality(quality),
-                type : recipe.attracts,
-                expeditions : qualityToExpeditions(quality)
+                recipe: slots.join(""),
+                quality: getEnglishQuality(quality),
+                date: Date.now(),
+                type: recipe.attracts,
+                expeditions: qualityToExpeditions(quality)
             });
 
             PQG.saveDb();
