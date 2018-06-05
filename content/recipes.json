@@ -1,9 +1,10 @@
 [
     {
+        "id"           : 1,
         "name"         : "Mulligan Stew",
         "description"  : "Favorite food of some Pokemon on Tumblecube Island",
         "attractType"  : "all",
-        "attracts"     : "all",
+        "attracts"     : "any",
         "knownRecipes" : [
             {
                 "type"   : "SP",
@@ -59,6 +60,7 @@
         }
     },
     {
+        "id"           : 2,
         "name"         : "Red Stew",
         "description"  : "Favorite food of reddish Pokemon",
         "attractType"  : "color",
@@ -106,6 +108,7 @@
         }
     },
     {
+        "id"           : 3,
         "name"         : "Blue Soda",
         "description"  : "Favorite food of bluish Pokemon",
         "attractType"  : "color",
@@ -149,6 +152,7 @@
         }
     },
     {
+        "id"           : 4,
         "name"         : "Yellow Curry",
         "description"  : "Favorite food of yellowish Pokemon",
         "attractType"  : "color",
@@ -188,6 +192,7 @@
         }
     },
     {
+        "id"           : 5,
         "name"         : "Gray Porridge",
         "description"  : "Favorite food of grayish Pokemon",
         "attractType"  : "color",
@@ -227,6 +232,7 @@
         }
     },
     {
+        "id"           : 6,
         "name"         : "Mouth-Watering Dip",
         "description"  : "Favorite food of Water-type Pokemon",
         "attractType"  : "type",
@@ -266,6 +272,7 @@
         }
     },
     {
+        "id"           : 7,
         "name"         : "Plain Crepe",
         "description"  : "Favorite food of Normal-type Pokemon",
         "attractType"  : "type",
@@ -305,6 +312,8 @@
         }
     },
     {
+
+        "id"           : 8,
         "name"         : "Sludge Soup",
         "description"  : "Favorite food of Poison-type Pokemon",
         "attractType"  : "type",
@@ -340,6 +349,7 @@
         }
     },
     {
+        "id"           : 9,
         "name"         : "Mud Pie",
         "description"  : "Favorite food of Ground-type Pokemon",
         "attractType"  : "type",
@@ -379,6 +389,7 @@
         }
     },
     {
+        "id"           : 10,
         "name"         : "Veggie Smoothie",
         "description"  : "Favorite food of Grass-Type Pokemon",
         "attractType"  : "type",
@@ -418,6 +429,7 @@
         }
     },
     {
+        "id"           : 11,
         "name"         : "Honey Nectar",
         "description"  : "Favorite food of Bug-type Pokemon",
         "attractType"  : "type",
@@ -457,6 +469,7 @@
         }
     },
     {
+        "id"           : 12,
         "name"         : "Brain Food",
         "description"  : "Favorite food of Psychic-type Pokemon",
         "attractType"  : "type",
@@ -496,6 +509,7 @@
         }
     },
     {
+        "id"           : 13,
         "name"         : "Stone Soup",
         "description"  : "Favorite food of Rock-type Pokemon",
         "attractType"  : "type",
@@ -535,6 +549,7 @@
         }
     },
     {
+        "id"           : 14,
         "name"         : "Light as Air",
         "description"  : "Favorite food of Flying-type Pokemon",
         "attractType"  : "type",
@@ -574,6 +589,7 @@
         }
     },
     {
+        "id"           : 15,
         "name"         : "Hot Pot",
         "description"  : "Favorite food of Fire-type Pokemon",
         "attractType"  : "type",
@@ -613,6 +629,7 @@
         }
     },
     {
+        "id"           : 16,
         "name"         : "Watt a Risotta",
         "description"  : "Favorite food of Electric-type Pokemon",
         "attractType"  : "type",
@@ -652,6 +669,7 @@
         }
     },
     {
+        "id"           : 17,
         "name"         : "Get Swole Syrup",
         "description"  : "Favorite food of Fighting-type Pokemon",
         "attractType"  : "type",
@@ -691,6 +709,7 @@
         }
     },
     {
+        "id"           : 18,
         "name"         : "Ambrosia of Legends",
         "description"  : "Favorite food of Legendary Pokemon",
         "attractType"  : "type",

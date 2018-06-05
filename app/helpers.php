@@ -9,6 +9,24 @@ function view($file, $data = [])
     require $_SERVER["DOCUMENT_ROOT"] . "/../views/$file.php";
 }
 
+function slugify($string){
+    $string = strtolower($string);
+    $string = str_replace(" ", "-", $string);
+
+    return $string;
+}
+
+function getRecipeSlug($recipe)
+{
+    return recipeSlug($recipe["attracts"], $recipe["name"]);
+}
+
+function recipeSlug($attracts, $name)
+{
+    $typeSegment = $attracts . "-type-pokemon/";
+    $nameSegment = $name . ' a la cube';
+    return "recipes/" . slugify($typeSegment . $nameSegment);
+}
 
 function fullView($file, $data = [])
 {
@@ -81,6 +99,35 @@ function getQualityName($quality)
     return "Unknown";
 }
 
+function englishRequirements($recipe){
+    $string = '';
+    foreach ($recipe["ingredients"] as $ingredient => $amount){
+        if(trim($amount) !== ''){
+
+            if($string != ''){
+                $string .= ' and ';
+            }
+
+            $string .= amountToCount($amount) . ' ' .$ingredient . ' ingredients';
+
+        }
+    }
+
+    return $string;
+}
+
+function englishType($recipe){
+    $id = $recipe["id"];
+    $type = $recipe["attracts"];
+    $type = ucfirst($type);
+
+    if($id >= 6 && $id != 18 ){
+        $type .= " Type";
+    }
+
+    return $type;
+}
+
 function linkTo($name, $linkContents = false)
 {
     $content = Content::get("content");
@@ -93,7 +140,7 @@ function linkTo($name, $linkContents = false)
                 $linkContents = $thing["title"];
             }
 
-            echo '<a href="' . $thing["slug"] . '">' . $linkContents . '</a>';
+            echo '<a href="/' . $thing["slug"] . '">' . $linkContents . '</a>';
             return;
         }
     }
@@ -133,6 +180,28 @@ function renderRecipe($recipe, $ingredients)
         echo "</div>";
     }
     echo "</div>";
+}
+
+function recipeLink($id){
+    if($id <= 0){
+        $id = 18;
+    }
+    if($id >= 19){
+        $id = 1;
+    }
+
+    $index = $id - 1;
+
+    $allRecipes = Content::get("recipes");
+
+    $recipe = $allRecipes[$index];
+
+    $slug = getRecipeSlug($recipe);
+    echo "<a href='/$slug'>";
+    view("partials/recipe-card", [
+        "recipe" => $recipe
+    ]);
+    echo "</a>";
 }
 
 function amountToCount($amount)

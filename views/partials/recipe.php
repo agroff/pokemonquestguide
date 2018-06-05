@@ -23,6 +23,10 @@
         <?php foreach ($ingredients as $ingredient => $amount): ?>
             <?php renderIngredientAmount($ingredient, $amount, $allIngredients); ?>
         <?php endforeach; ?>
+
+        <a class="small centered game" href="<?php o(recipeSlug($attracts, $name)); ?>">
+            Full Recipe Page
+        </a>
     </div>
 
 

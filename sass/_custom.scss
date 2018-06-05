@@ -168,6 +168,16 @@ a.game {
     margin: auto;
     cursor: pointer;
 
+    &.centered{
+        margin:auto;
+        width:max-content;
+    }
+
+    &.small{
+        font-size:14px;
+        padding:6px;
+    }
+
     &.disabled {
         background-color: #9a730a;
         color: #999;
@@ -348,6 +358,7 @@ a.game {
         height: 30px;
         color: white;
         width: 30px;
+        font-size: 13px;
         padding: 6px 10px;
         font-weight: bold;
         margin: 10px 4px;

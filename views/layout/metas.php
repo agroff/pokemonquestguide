@@ -2,8 +2,7 @@
 
 <!-- Page Title Here -->
 <title>
-    <?php o($meta["title"]); ?>
-    | Pokemon Quest Guide
+    <?php o($meta["title"]); ?> | Pokemon Quest Guide
 </title>
 
 <!-- Page Description Here -->

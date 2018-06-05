@@ -2790,6 +2790,14 @@ a.game {
   display: block;
   margin: auto;
   cursor: pointer; }
+  button.game.centered,
+  a.game.centered {
+    margin: auto;
+    width: max-content; }
+  button.game.small,
+  a.game.small {
+    font-size: 14px;
+    padding: 6px; }
   button.game.disabled,
   a.game.disabled {
     background-color: #9a730a;
@@ -2925,6 +2933,7 @@ a.game {
     height: 30px;
     color: white;
     width: 30px;
+    font-size: 13px;
     padding: 6px 10px;
     font-weight: bold;
     margin: 10px 4px; }
@@ -3049,12 +3058,17 @@ a.game {
   max-width: 400px; }
   .result.none {
     color: #f7b569; }
+  .result h1.recipe-name,
+  .result h1#recipe-name {
+    font-size: 20px;
+    display: inline; }
   .result .number {
     background-color: #ffc617;
     display: inline-block;
     width: 30px;
     text-align: center;
     color: white; }
+  .result .result-header,
   .result #result-header {
     text-align: left;
     border-bottom: 3px solid #ffc617;
@@ -3077,45 +3091,65 @@ a.game {
       background-color: #00bd29; }
   .result .result-body {
     display: flex; }
+    .result .result-body .dish-image,
     .result .result-body #dish-image {
       width: 84px;
       background-image: url("/img/cooking/dishes.png"); }
+      .result .result-body .dish-image.image-0,
       .result .result-body #dish-image.image-0 {
         background-position: -339px -348px; }
+      .result .result-body .dish-image.image-1,
       .result .result-body #dish-image.image-1 {
         background-position: -0px -0px; }
+      .result .result-body .dish-image.image-2,
       .result .result-body #dish-image.image-2 {
         background-position: -84px 0px; }
+      .result .result-body .dish-image.image-3,
       .result .result-body #dish-image.image-3 {
         background-position: -168px 0px; }
+      .result .result-body .dish-image.image-4,
       .result .result-body #dish-image.image-4 {
         background-position: -252px 0px; }
+      .result .result-body .dish-image.image-5,
       .result .result-body #dish-image.image-5 {
         background-position: -336px 0px; }
+      .result .result-body .dish-image.image-6,
       .result .result-body #dish-image.image-6 {
         background-position: -420px 0px; }
+      .result .result-body .dish-image.image-7,
       .result .result-body #dish-image.image-7 {
         background-position: -504px 0px; }
+      .result .result-body .dish-image.image-8,
       .result .result-body #dish-image.image-8 {
         background-position: 0px -72px; }
+      .result .result-body .dish-image.image-9,
       .result .result-body #dish-image.image-9 {
         background-position: -84px -72px; }
+      .result .result-body .dish-image.image-10,
       .result .result-body #dish-image.image-10 {
         background-position: -168px -72px; }
+      .result .result-body .dish-image.image-11,
       .result .result-body #dish-image.image-11 {
         background-position: -252px -72px; }
+      .result .result-body .dish-image.image-12,
       .result .result-body #dish-image.image-12 {
         background-position: -336px -72px; }
+      .result .result-body .dish-image.image-13,
       .result .result-body #dish-image.image-13 {
         background-position: -420px -72px; }
+      .result .result-body .dish-image.image-14,
       .result .result-body #dish-image.image-14 {
         background-position: -504px -72px; }
+      .result .result-body .dish-image.image-15,
       .result .result-body #dish-image.image-15 {
         background-position: 0px -144px; }
+      .result .result-body .dish-image.image-16,
       .result .result-body #dish-image.image-16 {
         background-position: -84px -144px; }
+      .result .result-body .dish-image.image-17,
       .result .result-body #dish-image.image-17 {
         background-position: -168px -144px; }
+      .result .result-body .dish-image.image-18,
       .result .result-body #dish-image.image-18 {
         background-position: -252px -144px; }
     .result .result-body .text {
@@ -3124,7 +3158,9 @@ a.game {
       padding: 10px 10px;
       background-color: #f7b569;
       border-radius: 4px;
-      width: 230px; }
+      width: 230px;
+      color: #222;
+      min-height: 58px; }
 
 .past-recipe {
   padding: 6px;

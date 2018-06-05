@@ -11,6 +11,8 @@ if($uri === '') {
     $uri = '/';
 }
 
+$segments = explode("/", $uri);
+
 $data = [];
 $data["meta"] = [
     "title" => "Unofficial guide to pokemon quest",
@@ -37,6 +39,28 @@ foreach($allContent as $content){
 if($uri === 'index') {
     view("index", $data);
     die();
+}
+
+if($segments[0] === "recipes"){
+    $allRecipes = Content::get("recipes");
+
+    foreach ($allRecipes as $recipe){
+        $slug = getRecipeSlug($recipe);
+        if($uri === $slug){
+
+            //$data["meta"] = array_merge($data["meta"], $content);
+
+            $type = englishType($recipe);
+            $name = $recipe["name"] . " a la cube";
+            $data["meta"]["description"] = "Looking for $type pokemon in pokemon quest? $name will attract them. Find out how to make it, along with tons of other recipes, at Pokemon Quest Guide";
+            $data["meta"]["title"] = $name . " Recipe";
+            $data["recipe"] = $recipe;
+            $data["allIngredients"] = Content::get("ingredients");
+
+            fullView('general/recipe', $data);
+            die();
+        }
+    }
 }
 
 if($uri === 'ajax/ingredients'){
